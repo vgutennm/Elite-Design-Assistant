@@ -1,0 +1,816 @@
+It is **close, but not complete yet**.
+
+The version you had already covered the 8 service pages and linking them from the home page, but the thread you added confirms a few important items that should be locked into the final prompt:
+
+* the site still comes from a **premium, private-instruction, high-income positioning** and should keep the one-page/main-site direction while adding drill-in pages for services  
+* each service card should have a **Learn More** button placed **above** the **Inquire by Phone** button 
+* each new service page should explain **what the client gets, who it is for, likely outcomes, and why someone would choose that service** 
+* the broader site context should still include the established business details, social links, review CTA, and premium copy rules already captured in the project record   
+
+So below is the **updated all-in-one copy-paste prompt** I’d use for Replit.
+
+```text
+Update the existing Fury Combat Systems website by adding dedicated detail pages for each service, linking the service cards on the main site to those pages, adding the same pages to the navigation, and preserving the existing premium founder-led brand direction.
+
+IMPORTANT CONTEXT
+This site is already positioned as a premium, founder-led, private-instruction brand for higher-income clients. Do not make this feel like a generic martial arts gym, kids dojo, or cheap local class site.
+
+The tone should feel:
+- elite
+- calm
+- authoritative
+- premium
+- discreet
+- practical
+- real-world
+- founder-led
+- tactical without being cartoonish
+
+Do NOT use:
+- cheesy dojo language
+- generic fitness-gym language
+- low-end “free class” style wording
+- fake stats
+- fake testimonials
+- cheesy comic-book copy
+- cluttered template filler
+
+OBJECTIVE
+Add dedicated service detail pages for these services:
+1. Private Instruction
+2. Advanced Tactical Instruction
+3. Women’s Private Safety Training
+4. Tactical Conditioning
+5. Young Adult Readiness Training
+6. Executive Readiness
+7. Family Protection Session
+8. Private Workshops
+
+Then:
+- link the existing service cards on the main page to the new detail pages
+- add these pages to the main navigation and mobile navigation
+- keep the current premium visual identity and site structure
+- add a Learn More button above Inquire by Phone on each service card
+- create detailed pages that clearly explain what the client gets
+
+CRITICAL SERVICE CARD REQUIREMENT
+Each service card on the main site must include buttons in this order:
+1. Learn More
+2. Inquire by Phone
+3. Inquire by Email
+
+Learn More should link to the dedicated service page.
+Inquire by Phone should trigger tap-to-call or a tel: link.
+Inquire by Email should trigger email or contact flow.
+
+SITE-WIDE BRAND / BUSINESS DETAILS
+Use these official details unless there is already a better confirmed live value in the site code:
+
+Business Name:
+Fury Combat Systems
+
+Founder:
+Grandmaster Dr. David Furie
+
+Phone:
+(917) 340-2911
+
+Email:
+david.furie@gmail.com
+
+Address:
+24 Cobek Ct, Brooklyn, NY 11223
+
+Website:
+https://furycombat.com
+
+Directions Link:
+https://www.google.com/maps/search/?api=1&query=Fury+Combat+Systems+24+Cobeck+Ct+Brooklyn+NY+11223
+
+SOCIAL LINKS
+Use these public-facing social links in footer/contact/structured data:
+- Facebook: https://www.facebook.com/furycombatbrooklyn/
+- Instagram: https://www.instagram.com/david.furie/
+- Instagram Reel: https://www.instagram.com/reel/DTV6Ia5kesh/
+- LinkedIn: https://www.linkedin.com/in/david-furie-17091548/
+- YouTube: https://www.youtube.com/channel/UC1bJFJVjk-0AqvfVAj18IOg
+
+GOOGLE REVIEW CTA
+Include a review CTA in the contact/footer area:
+Label:
+Leave a Google Review
+
+Microcopy:
+Trained with David? Please leave Fury Combat Systems a Google review.
+
+NAVIGATION UPDATE
+Preserve the existing main site navigation and add a Services area that exposes these detail pages.
+
+Use this structure:
+- Home
+- The System
+- The Legend: David Furie
+- Gallery
+- Private Instruction
+- Services
+  - Private Instruction
+  - Advanced Tactical Instruction
+  - Women’s Private Safety Training
+  - Tactical Conditioning
+  - Young Adult Readiness Training
+  - Executive Readiness
+  - Family Protection Session
+  - Private Workshops
+- Contact
+- FAQ
+
+If the desktop nav supports dropdowns, use a Services dropdown.
+If not, use a clean expandable submenu or direct links.
+In mobile nav, include the same structure.
+
+HOME PAGE / MAIN SERVICE SECTION UPDATE
+Find the existing service cards/offer cards and update them so each service card links to its dedicated detail page.
+
+Service card routing:
+- Private Instruction -> /private-instruction
+- Advanced Tactical Instruction -> /advanced-tactical-instruction
+- Women’s Private Safety Training -> /womens-private-safety-training
+- Tactical Conditioning -> /tactical-conditioning
+- Young Adult Readiness Training -> /young-adult-readiness-training
+- Executive Readiness -> /executive-readiness
+- Family Protection Session -> /family-protection-session
+- Private Workshops -> /private-workshops
+
+Make the card itself clickable if appropriate, but still keep the three visible buttons:
+- Learn More
+- Inquire by Phone
+- Inquire by Email
+
+DETAIL PAGE GOAL
+Each detail page must help a premium prospect understand:
+- what the service is
+- who it is for
+- what they will get
+- what likely outcomes they can expect
+- why they would choose this instead of generic training
+- how to inquire directly
+
+The content should be persuasive but refined.
+Use NEPQ-style influence where useful:
+- outcome-oriented
+- emotionally relevant
+- curiosity-driven
+- premium and confident
+- not pushy
+- not hypey
+
+STANDARD TEMPLATE FOR EACH SERVICE PAGE
+Each service detail page should use a consistent premium layout:
+
+1. HERO SECTION
+- H1 headline
+- short supporting subheadline
+- premium image/background treatment
+- price or starting price clearly visible
+- primary CTA: Inquire by Phone
+- secondary CTA: Inquire by Email
+- optional tertiary CTA: Back to Services or Get Directions
+
+2. OVERVIEW
+Brief explanation of the service in premium language.
+
+3. WHO THIS IS FOR
+Bullets or cards describing the ideal client.
+
+4. WHAT YOU GET
+Explain exactly what is included in the session(s), what types of training or focus areas may be covered, and how the experience is tailored.
+
+5. TRAINING FOCUS / WHAT WE MAY WORK ON
+Use practical categories relevant to the offer.
+
+6. LIKELY OUTCOMES
+Describe the kinds of benefits, capability, confidence, awareness, or readiness the client may build.
+
+7. WHY CHOOSE THIS
+Explain why someone would select this service over generic class-based training.
+
+8. FAQ
+Add 4–6 FAQs relevant to that service.
+
+9. RELATED SERVICES
+Link to 2–4 related service pages.
+
+10. CTA SECTION
+Repeat direct inquiry buttons:
+- Inquire by Phone
+- Inquire by Email
+
+11. CONTACT / INQUIRY STRIP
+Light contact strip or CTA that points to phone, email, and contact section.
+
+SERVICE PAGE CONTENT
+
+PAGE 1
+Route:
+ /private-instruction
+
+Meta Title:
+Private Instruction | Fury Combat Systems
+
+Meta Description:
+Private instruction with Grandmaster Dr. David Furie in Brooklyn. One-on-one training tailored to your goals, experience, and real-world readiness.
+
+H1:
+Private Instruction
+
+Price:
+$250 / session
+
+Subheadline:
+One-on-one training tailored to your goals, experience, and preferred areas of focus.
+
+Overview:
+Private Instruction is designed for clients who want direct access to high-level founder-led training without the distractions of a group class. Sessions are tailored around the client’s background, goals, comfort level, and priorities, with a focus on practical skill, personal readiness, and real-world application.
+
+Who This Is For:
+- serious adults
+- professionals
+- beginners who want private learning
+- returning martial artists
+- clients who value discretion
+- individuals who want training built around their specific goals
+
+What You Get:
+- one-on-one instruction
+- customized session focus
+- direct feedback and correction
+- practical skill development
+- a private training experience shaped around your needs
+
+Training Focus / What We May Work On:
+- movement
+- striking
+- grappling
+- defensive positioning
+- situational awareness
+- tactical response
+- pressure-point application
+- controlled performance under stress
+
+Likely Outcomes:
+- better confidence under pressure
+- more awareness and control
+- improved movement and positioning
+- stronger personal readiness
+- a clearer sense of what works for you in real life
+
+Why Choose This:
+This is not generic class-based training. It is direct, personalized, founder-led instruction for people who want a more serious and practical learning experience.
+
+FAQs:
+- Do I need prior experience?
+- Is this suitable for beginners?
+- How are sessions customized?
+- Is this offered privately only?
+- Can this focus on a specific area of concern?
+
+Related Services:
+- Advanced Tactical Instruction
+- Executive Readiness
+- Tactical Conditioning
+
+PAGE 2
+Route:
+ /advanced-tactical-instruction
+
+Meta Title:
+Advanced Tactical Instruction | Fury Combat Systems
+
+Meta Description:
+Advanced Tactical Instruction with David Furie for serious clients seeking higher-level readiness, awareness, and strategic response training.
+
+H1:
+Advanced Tactical Instruction
+
+Price:
+$500 / session
+
+Subheadline:
+An elevated private offering for serious individuals seeking instruction in readiness, tactical thinking, and strategic response.
+
+Overview:
+Advanced Tactical Instruction is built for clients who want a deeper and more sophisticated level of private training. It is designed around readiness, awareness under pressure, protective movement, strategic thinking, and practical response in more demanding situations.
+
+Who This Is For:
+- experienced trainees
+- serious private clients
+- executives
+- security-minded professionals
+- individuals who want a higher level of preparedness
+
+What You Get:
+- advanced private instruction
+- higher-level coaching and correction
+- scenario-oriented training emphasis
+- more strategic and readiness-focused development
+- personalized sessions shaped around your concerns and goals
+
+Training Focus / What We May Work On:
+- readiness under pressure
+- tactical thinking
+- awareness under pressure
+- protective movement
+- weapons familiarity
+- reconnaissance concepts
+- strategic response
+
+Likely Outcomes:
+- stronger composure in uncertain situations
+- better decision-making under pressure
+- improved awareness and readiness
+- deeper tactical understanding
+- more confidence in complex environments
+
+Why Choose This:
+This offering is for clients who know ordinary training is not enough for what they want. It is more refined, more strategic, and more serious than standard instruction.
+
+FAQs:
+- Is this only for military or law enforcement?
+- Can civilians do this training?
+- Do I need prior experience?
+- How is this different from Private Instruction?
+- Can the focus be customized?
+
+Related Services:
+- Private Instruction
+- Executive Readiness
+- Private Workshops
+
+PAGE 3
+Route:
+ /womens-private-safety-training
+
+Meta Title:
+Women’s Private Safety Training | Fury Combat Systems
+
+Meta Description:
+Private safety training for women in Brooklyn focused on awareness, confidence, prevention, de-escalation, escape options, and real-world response.
+
+H1:
+Women’s Private Safety Training
+
+Price:
+$300 / session
+
+Subheadline:
+Private instruction designed to help women strengthen awareness, confidence, prevention skills, and decisive real-world response.
+
+Overview:
+Women’s Private Safety Training is designed to help women feel more aware, more prepared, and more confident in everyday situations. The focus is not fear. The focus is practical skill, better decisions, and stronger personal presence under pressure.
+
+Who This Is For:
+- women seeking private training
+- professionals
+- women who commute
+- women living or working in the city
+- mothers and daughters
+- students and young professionals
+
+What You Get:
+- private one-on-one or small private session instruction
+- personalized attention
+- practical prevention and awareness coaching
+- training tailored to your comfort level and concerns
+- a discreet and supportive learning environment
+
+Training Focus / What We May Work On:
+- awareness
+- confidence
+- prevention skills
+- de-escalation
+- escape options
+- decisive real-world response
+- boundary setting
+- voice and presence
+
+Likely Outcomes:
+- more confidence moving through public spaces
+- stronger awareness habits
+- better boundary-setting ability
+- improved emotional control under stress
+- greater readiness to act earlier
+
+Why Choose This:
+This is practical women’s safety training in a private setting, not a generic seminar or fear-based class. It is personalized, direct, and built around real-world application.
+
+FAQs:
+- Is this beginner-friendly?
+- Can this be tailored to a specific concern?
+- Is it private only?
+- Is this fitness-based or practical training?
+- Can mothers and daughters train together?
+
+Related Services:
+- Young Adult Readiness Training
+- Family Protection Session
+- Private Instruction
+
+PAGE 4
+Route:
+ /tactical-conditioning
+
+Meta Title:
+Tactical Conditioning | Fury Combat Systems
+
+Meta Description:
+Tactical Conditioning with David Furie combines conditioning, reaction, coordination, and practical defensive drills in a private training format.
+
+H1:
+Tactical Conditioning
+
+Price:
+$150 / session
+
+Subheadline:
+A private training experience that combines conditioning, coordination, movement, reaction, and practical defensive drills.
+
+Overview:
+Tactical Conditioning is for clients who want to improve the physical side of readiness while staying connected to practical movement and defensive application. It blends conditioning with reaction, control, and purposeful training.
+
+Who This Is For:
+- adults who want practical conditioning
+- clients building readiness
+- professionals who want focused training
+- individuals who want a lower barrier entry into private instruction
+- people looking to sharpen movement and coordination
+
+What You Get:
+- private guided training
+- conditioning with real-world relevance
+- movement and reaction drills
+- practical defensive applications built into the work
+- training scaled to your level
+
+Training Focus / What We May Work On:
+- conditioning
+- coordination
+- movement
+- reaction
+- practical defensive drills
+- footwork
+- balance
+- recovery under pressure
+
+Likely Outcomes:
+- improved physical readiness
+- sharper reactions
+- better coordination and body control
+- stronger endurance and movement efficiency
+- more confidence in your physical capabilities
+
+Why Choose This:
+This is more purposeful than generic fitness training because it connects physical development to practical readiness and controlled application.
+
+FAQs:
+- Is this more fitness or self-defense?
+- Is it beginner-friendly?
+- Can this be combined with Private Instruction?
+- Is it appropriate for older adults?
+- How intense is a session?
+
+Related Services:
+- Private Instruction
+- Young Adult Readiness Training
+- Family Protection Session
+
+PAGE 5
+Route:
+ /young-adult-readiness-training
+
+Meta Title:
+Young Adult Readiness Training | Fury Combat Systems
+
+Meta Description:
+Young Adult Readiness Training with David Furie for commuting, college, travel, city life, confidence, and practical real-world readiness.
+
+H1:
+Young Adult Readiness Training
+
+Price:
+$225 / session
+
+Subheadline:
+Private instruction for young adults preparing for college, commuting, travel, city life, or greater independence.
+
+Overview:
+Young Adult Readiness Training is designed to help young adults become more aware, more confident, and better prepared for the realities of independence. It is especially relevant for city life, commuting, travel, and transitional life stages.
+
+Who This Is For:
+- high school seniors
+- college students
+- young adults
+- commuters
+- parents seeking private training for their children
+- young people preparing for greater independence
+
+What You Get:
+- private training tailored to the individual
+- real-world readiness coaching
+- awareness and decision-making support
+- practical skills for public-space and day-to-day situations
+- a serious but age-appropriate learning environment
+
+Training Focus / What We May Work On:
+- commuting awareness
+- city safety
+- travel readiness
+- confidence and presence
+- verbal boundaries
+- practical response habits
+- situational awareness
+
+Likely Outcomes:
+- stronger confidence
+- better everyday awareness
+- improved decision-making
+- greater readiness for independence
+- more peace of mind for both the student and family
+
+Why Choose This:
+This helps bridge the gap between dependence and independence with practical private instruction that is serious, modern, and relevant to real life.
+
+FAQs:
+- Is this appropriate for teens or only college-age students?
+- Can parents be involved?
+- Is it private only?
+- Can this focus on commuting or city life?
+- Is prior experience required?
+
+Related Services:
+- Women’s Private Safety Training
+- Family Protection Session
+- Private Instruction
+
+PAGE 6
+Route:
+ /executive-readiness
+
+Meta Title:
+Executive Readiness | Fury Combat Systems
+
+Meta Description:
+Executive Readiness with David Furie is premium private training for executives, entrepreneurs, and professionals who value preparedness, discretion, and self-command.
+
+H1:
+Executive Readiness
+
+Price:
+$400 / session
+
+Subheadline:
+A premium private training offering for executives, entrepreneurs, professionals, and public-facing individuals who value preparedness, discretion, awareness, and self-command.
+
+Overview:
+Executive Readiness is built for higher-level clients who want a discreet, serious, and premium private training experience. The emphasis is on composure, awareness, preparedness, and real-world self-command.
+
+Who This Is For:
+- executives
+- entrepreneurs
+- professionals
+- public-facing individuals
+- clients who value discretion
+- higher-income private clients seeking serious instruction
+
+What You Get:
+- founder-led private training
+- premium personalized instruction
+- discreet, focused sessions
+- practical readiness coaching
+- a higher-standard training experience
+
+Training Focus / What We May Work On:
+- preparedness
+- discretion
+- awareness
+- self-command
+- situational control
+- movement and positioning
+- decision-making under pressure
+
+Likely Outcomes:
+- greater confidence and composure
+- improved awareness in public and professional environments
+- stronger self-command under pressure
+- a more personalized readiness skill set
+- a training experience aligned with a demanding lifestyle
+
+Why Choose This:
+This is designed for people who do not want a public class environment and who value serious, tailored, private instruction delivered at a higher standard.
+
+FAQs:
+- Is this only for executives?
+- How private is the training?
+- Can it be customized to my work/lifestyle?
+- Is it beginner-friendly?
+- How is this different from Private Instruction?
+
+Related Services:
+- Advanced Tactical Instruction
+- Private Instruction
+- Private Workshops
+
+PAGE 7
+Route:
+ /family-protection-session
+
+Meta Title:
+Family Protection Session | Fury Combat Systems
+
+Meta Description:
+Family Protection Sessions with David Furie focused on awareness, protective habits, emergency thinking, and everyday readiness for individuals and families.
+
+H1:
+Family Protection Session
+
+Price:
+$350 / session
+
+Subheadline:
+A private session for individuals or families focused on practical awareness, protective habits, emergency thinking, and everyday readiness.
+
+Overview:
+Family Protection Sessions are designed for individuals or families who want practical guidance around awareness, household and daily-life readiness, emergency thinking, and protective habits that make real-world situations more manageable.
+
+Who This Is For:
+- parents
+- families
+- couples
+- individuals responsible for others
+- clients seeking everyday protective habits
+- households preparing for greater readiness
+
+What You Get:
+- private family-focused instruction
+- practical readiness guidance
+- awareness and emergency-thinking coaching
+- customized discussion and training themes
+- an accessible format for multiple family members if needed
+
+Training Focus / What We May Work On:
+- practical awareness
+- protective habits
+- emergency thinking
+- everyday readiness
+- home-to-street awareness transitions
+- family communication under stress
+
+Likely Outcomes:
+- better shared awareness
+- stronger everyday protective habits
+- more confidence as a household
+- clearer emergency thinking
+- a practical framework families can use in real life
+
+Why Choose This:
+This creates a more useful and relevant experience for people who are not just thinking about themselves, but about the people they are responsible for protecting.
+
+FAQs:
+- Can multiple family members attend?
+- Is this appropriate for parents and teens?
+- Is this more discussion-based or physical?
+- Can it be customized to our concerns?
+- Is it beginner-friendly?
+
+Related Services:
+- Young Adult Readiness Training
+- Women’s Private Safety Training
+- Private Instruction
+
+PAGE 8
+Route:
+ /private-workshops
+
+Meta Title:
+Private Workshops | Fury Combat Systems
+
+Meta Description:
+Private workshops with David Furie for companies, leadership teams, women’s groups, and select audiences seeking practical awareness, de-escalation, readiness, and protection principles.
+
+H1:
+Private Workshops
+
+Price:
+Starting at $1,500
+
+Subheadline:
+Private workshops for companies, organizations, leadership teams, women’s groups, and select audiences seeking a refined, practical training experience.
+
+Overview:
+Private Workshops are designed for organizations and select groups that want a more elevated and relevant training experience around awareness, de-escalation, readiness, and personal protection principles.
+
+Who This Is For:
+- companies
+- leadership teams
+- organizations
+- women’s groups
+- schools or select institutions
+- curated private groups
+
+What You Get:
+- a private workshop format
+- tailored topic selection
+- practical instruction for group environments
+- premium presentation and founder-led teaching
+- a more refined alternative to generic seminars
+
+Training Focus / What We May Work On:
+- awareness
+- de-escalation
+- readiness
+- personal protection principles
+- group safety culture
+- practical response thinking
+
+Likely Outcomes:
+- more aware teams or groups
+- stronger shared language around readiness
+- more confidence in public or workplace environments
+- a memorable and practical private training experience
+
+Why Choose This:
+These workshops are designed for groups that want something more serious, more customized, and more practical than a standard generic safety talk.
+
+FAQs:
+- Who are these workshops best for?
+- Can the content be customized?
+- Are these held onsite or privately arranged?
+- What size groups work best?
+- Can this be tailored for women’s groups or leadership teams?
+
+Related Services:
+- Executive Readiness
+- Women’s Private Safety Training
+- Advanced Tactical Instruction
+
+DESIGN / UI REQUIREMENTS
+Apply a consistent premium design system across all service pages:
+- dark elegant styling
+- clean spacing
+- strong typography
+- premium cards
+- subtle hover effects
+- high-contrast buttons
+- responsive layout
+- visually consistent with the existing Fury Combat site
+- preserve the founder-led serious aesthetic
+
+INTERNAL LINKING REQUIREMENTS
+- main site service cards must link to each detail page
+- services nav links must link to each detail page
+- each detail page must include related services links
+- CTA buttons should link to phone/email/contact flow appropriately
+- include breadcrumb or a subtle back-to-services option if it fits the design
+
+IMAGE / MEDIA GUIDANCE
+Use the existing site’s approved Fury imagery and preserve the premium balance:
+- mostly real founder / authority / training imagery
+- some action imagery
+- use symbolic Fury art sparingly
+
+SEO / STRUCTURE REQUIREMENTS
+- one H1 per page
+- clean H2/H3 hierarchy
+- unique meta title and meta description per page
+- local references to Brooklyn where natural
+- preserve premium copy
+- support discoverability for private training searches
+
+SCHEMA / TECHNICAL
+Where appropriate, preserve or extend:
+- LocalBusiness / SportsActivityLocation schema
+- FAQ schema on service pages if feasible
+- sameAs social links
+- responsive mobile behavior
+- tap-to-call
+- tap-to-email
+- accessible design and readable contrast
+
+FINAL QA CHECKLIST
+Before finishing, confirm:
+1. all 8 service pages exist
+2. all main service cards include Learn More above Inquire by Phone
+3. Learn More links correctly
+4. phone and email CTAs work
+5. nav includes service page access
+6. mobile nav includes service access
+7. each service page explains what the client gets, who it is for, likely outcomes, and why choose it
+8. styling remains consistent with the Fury Combat premium brand
+9. layout is responsive
+10. all pages feel premium, serious, founder-led, and designed for higher-income private clients
+
+Build this update now.
+```
+
+This version matches the thread better. It preserves the premium site context, adds the drill-in pages, locks the button order, and tells Replit exactly what each page has to communicate.   
+
+If you want, I can also make a **shorter “Replit-safe” version** that is less verbose but still complete.

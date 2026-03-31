@@ -2,7 +2,7 @@
 
 ## Overview
 
-pnpm workspace monorepo using TypeScript. Contains the Fury Combat Systems website — a premium one-page marketing site for an elite martial arts and tactical training brand in Brooklyn, NY.
+pnpm workspace monorepo using TypeScript. Contains the Fury Combat Systems website — a premium marketing site with 8 dedicated service pages for an elite martial arts and tactical training brand in Brooklyn, NY.
 
 ## Stack
 
@@ -91,6 +91,21 @@ Generated Zod schemas from the OpenAPI spec (e.g. `HealthCheckResponse`). Used b
 ### `lib/api-client-react` (`@workspace/api-client-react`)
 
 Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHealthCheck`, `healthCheck`).
+
+### `artifacts/fury-combat` (`@workspace/fury-combat`)
+
+Premium Fury Combat Systems website. React + Vite + Tailwind + Framer Motion + wouter (client-side routing).
+
+- **Pages**: Home (single-page with all sections) + 8 service detail pages
+- **Routing**: wouter with `/:slug` pattern; SPA rewrite rule in artifact.toml (`/* → /index.html`)
+- **Service pages**: Private Instruction, Advanced Tactical Instruction, Women's Private Safety Training, Tactical Conditioning, Young Adult Readiness Training, Executive Readiness, Family Protection Session, Private Workshops
+- **Shared components**: `SiteHeader` (sticky nav with Services dropdown), `SiteFooter` (4-column footer with services column)
+- **Service data**: `src/data/services.ts` — all service content, routes, FAQs, related services
+- **Service detail template**: `src/pages/ServiceDetail.tsx` — hero, overview, who it's for, what you get, training focus, likely outcomes, why choose, FAQ, related services, CTA
+- **Assets**: 39 photos in `attached_assets/` loaded via `import.meta.glob` with timestamp-based filename matching
+- **SEO**: LocalBusiness + FAQ JSON-LD schemas, unique meta title/description per service page
+- **Design**: Cinzel serif headings, Inter body, dark bg (#09090b), red primary accent (#dc2626), rounded-none buttons, uppercase tracking-widest labels
+- **Contact**: tel:9173402911, mailto:david.furie@gmail.com, 24 Cobek Ct Brooklyn NY 11223
 
 ### `scripts` (`@workspace/scripts`)
 

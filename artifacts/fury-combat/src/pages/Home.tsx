@@ -1,11 +1,15 @@
 import { useState, useEffect, useCallback } from 'react';
+import { Link } from 'wouter';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronRight, Phone, Mail, MapPin, ChevronLeft, Instagram, Linkedin, Facebook, Youtube, Star } from 'lucide-react';
+import { ChevronRight, Phone, Mail, MapPin, ChevronLeft, Star, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { serviceRoutes } from '@/data/services';
+import SiteHeader from '@/components/SiteHeader';
+import SiteFooter from '@/components/SiteFooter';
 
 const assetModules = import.meta.glob<string>('@assets/furycombat-website-photos-*', { eager: true, query: '?url', import: 'default' });
 
@@ -66,15 +70,6 @@ const galleryImageFiles = [
 const galleryImages = galleryImageFiles.map(f => asset(f)).filter((v): v is string => !!v);
 const imgDeco1 = asset('furycombat-website-photos-002.jpg');
 
-const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'The System', href: '#system' },
-  { name: 'The Legend', href: '#legend' },
-  { name: 'Gallery', href: '#gallery' },
-  { name: 'Private Instruction', href: '#instruction' },
-  { name: 'FAQ', href: '#faq' },
-  { name: 'Contact', href: '#contact' },
-];
 
 const services = [
   {
@@ -163,17 +158,7 @@ const faqs = [
 ];
 
 export default function Home() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const openLightbox = (index: number) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);
@@ -204,56 +189,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
       <div className="fixed inset-0 z-[-1] bg-noise"></div>
 
-      {/* Navigation */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
-        <div className="container mx-auto px-6 flex items-center justify-between">
-          <a href="#home" className="flex items-center gap-2 group">
-            <span className="font-serif text-2xl font-bold tracking-widest text-white group-hover:text-primary transition-colors">FURY<span className="text-primary group-hover:text-white transition-colors">COMBAT</span></span>
-          </a>
-
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a key={link.name} href={link.href} className="text-sm font-medium text-white/70 hover:text-white transition-colors uppercase tracking-widest">
-                {link.name}
-              </a>
-            ))}
-            <Button asChild variant="outline" className="border-primary/50 text-white hover:bg-primary hover:text-white rounded-none tracking-widest uppercase text-xs">
-              <a href="#contact">Inquire Now</a>
-            </Button>
-          </nav>
-
-          {/* Mobile Toggle */}
-          <button className="lg:hidden text-white p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </header>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-background/95 backdrop-blur-xl pt-24 pb-8 px-6 flex flex-col"
-          >
-            <nav className="flex flex-col gap-6 text-center mt-12">
-              {navLinks.map((link) => (
-                <a 
-                  key={link.name} 
-                  href={link.href} 
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-xl font-serif text-white/80 hover:text-primary transition-colors uppercase tracking-widest"
-                >
-                  {link.name}
-                </a>
-              ))}
-            </nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <SiteHeader />
 
       {/* HERO SECTION */}
       <section id="home" className="relative min-h-[100dvh] flex items-center pt-20 overflow-hidden">
@@ -605,6 +541,11 @@ export default function Home() {
                 </p>
                 
                 <div className="flex flex-col gap-3 mt-auto">
+                  {serviceRoutes[service.title] && (
+                    <Button asChild className="w-full justify-center bg-primary hover:bg-primary/90 text-white rounded-none tracking-widest text-xs uppercase">
+                      <Link href={serviceRoutes[service.title]}>Learn More</Link>
+                    </Button>
+                  )}
                   <Button asChild variant="outline" className="w-full justify-center border-white/20 hover:border-primary hover:bg-primary/10 rounded-none tracking-widest text-xs uppercase">
                     <a href="tel:9173402911">{service.isWorkshop ? 'Request a Private Workshop' : 'Inquire by Phone'}</a>
                   </Button>
@@ -768,80 +709,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-black py-20 border-t border-white/10">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-12 lg:gap-8 mb-16">
-            <div className="md:col-span-2">
-              <a href="#home" className="inline-block font-serif text-2xl font-bold tracking-widest text-white mb-6">
-                FURY<span className="text-primary">COMBAT</span>
-              </a>
-              <p className="text-white/50 text-sm max-w-sm leading-relaxed mb-8">
-                Private lessons and private workshops by inquiry only. Elite private martial arts and tactical training based in Brooklyn, NY.
-              </p>
-              <div className="flex gap-4">
-                <a href="https://www.facebook.com/furycombatbrooklyn/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-colors">
-                  <Facebook size={18} />
-                </a>
-                <a href="https://www.instagram.com/david.furie/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-colors">
-                  <Instagram size={18} />
-                </a>
-                <a href="https://www.linkedin.com/in/david-furie-17091548/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-colors">
-                  <Linkedin size={18} />
-                </a>
-                <a href="https://www.youtube.com/channel/UC1bJFJVjk-0AqvfVAj18IOg" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-colors">
-                  <Youtube size={18} />
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="text-white font-bold tracking-widest uppercase text-sm mb-6">Navigation</h4>
-              <ul className="space-y-4">
-                {navLinks.map(link => (
-                  <li key={link.name}>
-                    <a href={link.href} className="text-white/50 hover:text-primary text-sm transition-colors">{link.name}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-white font-bold tracking-widest uppercase text-sm mb-6">Contact Info</h4>
-              <ul className="space-y-4">
-                <li>
-                  <a href="tel:9173402911" className="text-white/50 hover:text-primary text-sm transition-colors block">(917) 340-2911</a>
-                </li>
-                <li>
-                  <a href="mailto:david.furie@gmail.com" className="text-white/50 hover:text-primary text-sm transition-colors block break-words">david.furie@gmail.com</a>
-                </li>
-                <li className="text-white/50 text-sm">
-                  24 Cobek Ct<br/>Brooklyn, NY 11223
-                </li>
-                <li className="pt-2">
-                  <a href="https://www.google.com/maps/search/?api=1&query=Fury+Combat+Systems+24+Cobeck+Ct+Brooklyn+NY+11223" target="_blank" rel="noreferrer" className="text-primary hover:text-white text-sm font-semibold transition-colors flex items-center gap-1">
-                    Get Directions <ChevronRight size={14} />
-                  </a>
-                </li>
-                <li className="pt-2">
-                  <a href="https://search.google.com/local/writereview?placeid=ChIJK3bJOxJGwokRWkZSVj7DV5s" target="_blank" rel="noreferrer" className="text-primary hover:text-white text-sm font-semibold transition-colors flex items-center gap-1">
-                    Leave a Google Review <ChevronRight size={14} />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/30 text-xs">
-              &copy; {new Date().getFullYear()} Fury Combat Systems. All rights reserved.
-            </p>
-            <p className="text-white/30 text-xs">
-              <a href="https://furycombat.com" className="hover:text-white transition-colors">furycombat.com</a>
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
