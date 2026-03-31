@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Fury Combat Systems"
+version = "1.0.0"
+id = "artifacts/fury-combat"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26015
+
+[services.development]
+run = "pnpm --filter @workspace/fury-combat run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/fury-combat", "run", "build" ]
+publicDir = "artifacts/fury-combat/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26015"
+BASE_PATH = "/"

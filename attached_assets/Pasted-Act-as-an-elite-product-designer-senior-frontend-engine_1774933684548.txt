@@ -1,0 +1,471 @@
+Act as an elite product designer, senior frontend engineer, conversion strategist, and premium-brand copy implementer.
+
+Build a modern, responsive, one-page website for:
+
+Fury Combat Systems
+Founder: Grandmaster Dr. David Furie
+
+This is NOT a generic martial arts school website.
+It must feel premium, founder-led, tactical, private, high-authority, and visually powerful.
+
+PRIMARY GOAL
+Attract higher-income individuals who want private instruction in the kinds of skills David teaches:
+- personal readiness
+- practical self-protection
+- tactical awareness
+- situational control
+- conditioning
+- real-world application
+
+SECONDARY GOALS
+- establish David Furie as a rare, credible, founder-led authority
+- clearly explain the Fury System
+- show public recognition, training imagery, and legitimacy
+- drive direct inquiries by phone and email
+- support SEO, AEO, GEO, and local Brooklyn discoverability
+
+SITE TYPE
+- single-page website
+- anchored navigation
+- informational-first
+- mobile responsive
+- premium visual design
+- contact conversion focused
+
+NAVIGATION
+Use sticky top navigation with smooth scrolling anchors:
+- Home
+- The System
+- The Legend: David Furie
+- Gallery
+- Private Instruction
+- Contact
+- FAQ
+
+BUSINESS DETAILS
+Business name: Fury Combat Systems
+Founder: Grandmaster Dr. David Furie
+Phone: (917) 340-2911
+Email: david.furie@gmail.com
+Address: 24 Cobek Ct, Brooklyn, NY 11223
+Website: https://furycombat.com
+Directions link:
+https://www.google.com/maps/search/?api=1&query=Fury+Combat+Systems+24+Cobeck+Ct+Brooklyn+NY+11223
+
+SOCIAL LINKS
+- Facebook: https://www.facebook.com/furycombatbrooklyn/
+- Instagram: https://www.instagram.com/david.furie/
+- Instagram Reel: https://www.instagram.com/reel/DTV6Ia5kesh/
+- LinkedIn: https://www.linkedin.com/in/david-furie-17091548/
+- YouTube: https://www.youtube.com/channel/UC1bJFJVjk-0AqvfVAj18IOg
+
+GOOGLE REVIEW CTA
+Include a button or CTA area labeled:
+Leave a Google Review
+
+Also include microcopy:
+Trained with David? Please leave Fury Combat Systems a Google review.
+
+FOUNDER AUTHORITY POINTS
+Use these naturally throughout the page:
+- 10th degree black belt / dan
+- retired Secret Service Operative
+- former member of the military’s elite Special Forces unit
+- world champion fighter / free fighting world champion
+- International Combat Martial Arts Master
+- founder of the Fury System
+- psychology and sports science background
+
+TARGET AUDIENCE
+Primary:
+- executives
+- entrepreneurs
+- professionals
+- public-facing individuals
+- higher-income private clients
+- parents willing to invest in premium instruction
+
+Secondary:
+- women seeking private safety training
+- young adults / college-bound students
+- families seeking protection guidance
+- selected professionals wanting tactical conditioning or executive readiness
+
+BRAND POSITIONING
+This should feel like elite private instruction, not a kids dojo or strip-mall martial arts school.
+
+Position the brand as:
+- elite private training
+- founder-led
+- discreet
+- personalized
+- real-world
+- tactical
+- premium
+- serious
+
+NEPQ WRITING STYLE
+Rewrite and present the content with NEPQ influence where useful:
+- emotionally relevant
+- outcome-oriented
+- curiosity-driven
+- premium and confident
+- not hypey
+- not cheesy
+- not manipulative
+- not generic fitness-gym language
+
+Use refined language that makes the visitor think:
+- What kind of training would I want if the situation were real?
+- How different would I feel with private instruction designed around me?
+- What would access to this level of experience change?
+
+VISUAL DESIGN DIRECTION
+The site should feel inspired by a premium martial/tactical aesthetic with strong red and black tones, but clean and modern.
+
+Use:
+- black / charcoal / deep gray base
+- red accents
+- crisp white text
+- premium spacing
+- cinematic image presentation
+- subtle motion
+- elegant cards
+- high contrast
+- minimal clutter
+
+Do NOT make it feel:
+- cartoonish
+- overly fantasy-heavy
+- dated
+- like a cheap template
+- like a typical local gym site
+
+TECHNICAL REQUIREMENTS
+- responsive desktop/mobile
+- sticky header
+- smooth anchor scrolling
+- image optimization / lazy loading
+- lightbox gallery
+- FAQ accordion
+- tap-to-call on mobile
+- tap-to-email on mobile
+- good performance
+- accessible typography and spacing
+- elegant hover states
+- modern polished UI
+
+SECTION STRUCTURE
+
+1. HOME / HERO
+Headline options should feel premium and direct.
+Use:
+Fury Combat Systems
+and a strong supporting line such as:
+Elite Private Training in Brooklyn
+or
+Real-World Readiness. Private Instruction. Founder-Led Training.
+
+Hero body copy:
+Train privately with Grandmaster Dr. David Furie in personal readiness, tactical awareness, practical self-protection, and high-level instruction designed for real-world application.
+
+Additional supporting copy:
+Fury Combat offers private instruction for individuals seeking more than a standard martial arts class. Each session is designed around the client’s goals, lifestyle, and level of experience, with a focus on practical skill, confidence, awareness, conditioning, and readiness under pressure.
+
+Primary CTA:
+Inquire by Phone
+
+Secondary CTA:
+Inquire by Email
+
+Optional CTA:
+Get Directions
+
+2. HOME INTRO / AUTHORITY STRIP
+Short intro:
+Fury Combat Systems is a Brooklyn-based private training brand led by Grandmaster Dr. David Furie. The Fury System blends practical hand-to-hand instruction, tactical awareness, strategic thinking, and personal readiness for clients who want real-world capability—not generic training.
+
+Authority strip items:
+- 10th Dan
+- Former Special Forces Operative
+- World Champion Fighter
+- Private Instruction in Brooklyn
+
+3. THE SYSTEM
+Heading:
+The System
+
+Copy:
+The Fury System is an innovative combat martial arts system that blends techniques, tactics, and strategic thinking from multiple disciplines into one practical method. It is built for modern self-protection, close-quarter readiness, tactical awareness, and real-world application.
+
+In the original system language, FURY breaks into two symbolic elements: Wind and Spirit. Wind represents motivation, hard work, and discipline. Spirit represents heart, ambition, and devotion to the path. Together, they define the physical and mental foundation of the system.
+
+Use concise supporting bullets:
+- Self-protection first. Combat second.
+- Real-world readiness
+- Hand-to-hand skill
+- Tactical awareness
+- Mental discipline
+- Emotional control under pressure
+- Improvised environmental awareness
+
+4. THE LEGEND: DAVID FURIE
+Heading:
+The Legend: David Furie
+
+Copy:
+Grandmaster Dr. David Furie is a 10th degree black belt / dan, a retired Secret Service Operative, a former member of the military’s elite Special Forces unit, a world champion fighter, and an International Combat Martial Arts Master.
+
+He developed the Fury System to reflect the evolution of combat for the modern world—training that sharpens not only physical capability, but also mental toughness, emotional control, and readiness under pressure.
+
+For those seeking direct access to high-level instruction shaped by decades of experience, Fury Combat offers a rare private training environment grounded in real-world application.
+
+Optional supporting paragraph:
+Across seminars, public appearances, martial arts events, and private instruction, David has built a presence that reflects discipline, recognition, and lifelong commitment to the path of combat arts and personal readiness.
+
+5. GALLERY
+Heading:
+Gallery
+
+Intro:
+A closer look at Fury Combat Systems, Grandmaster David Furie, public appearances, training moments, events, and the visual identity behind the Fury System.
+
+Create an elegant gallery grid with lightbox.
+
+6. PRIVATE INSTRUCTION
+Heading:
+Private Instruction
+
+Subheading:
+Elite Private Training with Grandmaster Dr. David Furie
+
+Intro:
+Fury Combat offers a private training experience for individuals seeking a higher standard of instruction in personal readiness, protective skill, physical conditioning, and situational control.
+
+Each session is tailored to the individual and designed around specific goals, background, lifestyle, and level of experience. Training is discreet, personalized, and grounded in real-world application.
+
+Training is currently available by private lesson and private workshop only.
+
+Create premium offer cards for these services:
+
+A. Private Instruction
+Starting at $250 per session
+One-on-one training tailored to your goals, experience, and preferred areas of focus. Sessions may include movement, striking, grappling, defensive positioning, situational awareness, tactical response, pressure-point application, and controlled performance under stress.
+
+B. Advanced Tactical Instruction
+Starting at $500 per session
+A more elevated private offering for serious individuals seeking instruction in readiness, tactical thinking, awareness under pressure, protective movement, weapons familiarity, reconnaissance concepts, and strategic response.
+
+C. Women’s Private Safety Training
+Starting at $300 per session
+Private instruction designed to help women strengthen awareness, confidence, prevention skills, de-escalation ability, escape options, and decisive real-world response.
+
+D. Tactical Conditioning
+Starting at $150 per session
+A private training experience that combines conditioning, coordination, movement, reaction, and practical defensive drills.
+
+E. Young Adult Readiness Training
+Starting at $225 per session
+Private instruction for young adults preparing for college, commuting, travel, city life, or greater independence.
+
+F. Executive Readiness
+Starting at $400 per session
+A premium private training offering for executives, entrepreneurs, professionals, and public-facing individuals who value preparedness, discretion, awareness, and self-command.
+
+G. Family Protection Session
+Starting at $350 per session
+A private session for individuals or families focused on practical awareness, protective habits, emergency thinking, and everyday readiness.
+
+H. Private Workshops
+Starting at $1,500
+Private workshops for companies, organizations, leadership teams, women’s groups, and select audiences seeking a refined, practical training experience in awareness, de-escalation, readiness, and personal protection principles.
+
+Each card should have CTA buttons:
+- Inquire by Phone
+- Inquire by Email
+For workshops:
+- Request a Private Workshop
+- Contact David
+
+7. CONTACT
+Heading:
+Contact
+
+Subheading:
+Inquire About Private Training
+
+Copy:
+All Fury Combat instruction is currently offered by private lesson or private workshop only.
+
+To inquire about availability, training focus, or private scheduling:
+
+Phone: (917) 340-2911
+Email: david.furie@gmail.com
+Location: 24 Cobek Ct, Brooklyn, NY 11223
+
+Buttons:
+- Call David
+- Email David
+- Get Directions
+- Leave a Google Review
+
+Optional simple contact form:
+- Name
+- Email
+- Phone
+- Interested In
+- Message
+
+8. FAQ
+Heading:
+Frequently Asked Questions
+
+Use accordion format with these Q&As:
+
+What is Fury Combat Systems?
+Fury Combat Systems is a Brooklyn-based private martial arts and tactical training brand built around the Fury System developed by Grandmaster Dr. David Furie.
+
+Who is David Furie?
+David Furie is a 10th degree black belt / dan, retired Secret Service Operative, former Special Forces member, world champion fighter, and International Combat Martial Arts Master.
+
+What kind of training does Fury Combat offer?
+Fury Combat focuses on private instruction in practical self-protection, hand-to-hand skill, tactical awareness, conditioning, and readiness for real-world situations.
+
+Are classes group classes or private lessons?
+At this time, Fury Combat offers private lessons and private workshops only.
+
+Where is Fury Combat Systems located?
+Fury Combat Systems is based in Brooklyn, New York, at 24 Cobek Ct, Brooklyn, NY 11223.
+
+How do I contact David Furie?
+You can contact David directly by phone at (917) 340-2911 or by email at david.furie@gmail.com.
+
+Who is private instruction for?
+Private instruction is for serious clients seeking personalized, founder-led training in awareness, readiness, protective skill, and real-world application.
+
+Is the Fury System only for sport fighting?
+No. The Fury System is positioned around practical self-protection and readiness for real-life situations, with self-protection first and combat second.
+
+FOOTER
+Include:
+- business name
+- address
+- phone
+- email
+- website
+- directions
+- review CTA
+- social icons/links
+- footer nav
+- note: Private lessons and private workshops by inquiry only
+
+IMAGE PLAN
+Use the uploaded photos with the following priorities.
+
+Primary priority images:
+- furycombat-website-photos-005.jpg
+- furycombat-website-photos-001.jpg
+- furycombat-website-photos-017.jpg
+- furycombat-website-photos-031.png
+- furycombat-website-photos-024.png
+- furycombat-website-photos-025.png
+- furycombat-website-photos-034.png
+- furycombat-website-photos-040.png
+
+Strong supporting images:
+- furycombat-website-photos-007.jpg
+- furycombat-website-photos-010.jpg
+- furycombat-website-photos-011.jpg
+- furycombat-website-photos-013.jpg
+- furycombat-website-photos-019.jpg
+- furycombat-website-photos-020.jpg
+- furycombat-website-photos-021.jpg
+- furycombat-website-photos-038.png
+- furycombat-website-photos-039.png
+
+Gallery/supporting credibility:
+- furycombat-website-photos-003.jpg
+- furycombat-website-photos-008.jpg
+- furycombat-website-photos-009.jpg
+- furycombat-website-photos-023.png
+- furycombat-website-photos-026.png
+- furycombat-website-photos-027.png
+- furycombat-website-photos-028.png
+- furycombat-website-photos-029.png
+- furycombat-website-photos-030.png
+
+Decorative brand accent art, use sparingly:
+- furycombat-website-photos-002.jpg
+- furycombat-website-photos-004.jpg
+- furycombat-website-photos-006.jpg
+- furycombat-website-photos-012.jpg
+- furycombat-website-photos-014.jpg
+- furycombat-website-photos-015.jpg
+- furycombat-website-photos-016.jpg
+- furycombat-website-photos-018.jpg
+- furycombat-website-photos-022.png
+- furycombat-website-photos-032.png
+
+SECTION IMAGE RECOMMENDATIONS
+Hero:
+- 005 primary
+- 001 / 017 / 024 / 025 as alternatives
+
+The System:
+- 031 primary
+- 021 / 013 / 017 supporting
+- 022 or 032 as small badge accent
+
+The Legend:
+- 001, 005, 007, 010, 024, 025, 030, 034
+
+Private Instruction:
+- 017, 019, 040, 010
+
+Gallery:
+Use mixed set from gallery/supporting lists.
+
+SEO / AEO / GEO
+Naturally incorporate:
+- Fury Combat Systems
+- David Furie
+- Brooklyn martial arts
+- private martial arts lessons Brooklyn
+- tactical training Brooklyn
+- personal protection training Brooklyn
+- women’s private safety training Brooklyn
+- executive readiness Brooklyn
+- Brooklyn, NY
+- Brighton Beach
+- Sheepshead Bay
+
+SCHEMA
+Include:
+- LocalBusiness or SportsActivityLocation schema
+- FAQ schema
+- sameAs social links
+
+METADATA
+Title:
+Fury Combat Systems | Private Martial Arts & Tactical Training in Brooklyn
+
+Meta description:
+Train privately with Grandmaster Dr. David Furie at Fury Combat Systems in Brooklyn. Elite private instruction in self-protection, tactical awareness, conditioning, and real-world readiness.
+
+IMPORTANT COPY RULES
+- no fake stats
+- no fake testimonials
+- no generic boxing-template filler
+- no cheesy comic-book copy
+- no low-end gym language
+- keep it premium, concise, founder-led, and serious
+
+FINAL USER IMPRESSION TO OPTIMIZE FOR
+A higher-income visitor should feel:
+- this is not ordinary training
+- David has real authority
+- this feels private and serious
+- this is the kind of instruction you inquire about directly
+- if I want this level of access, I need to contact him
+
+Build V1 now.

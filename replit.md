@@ -2,7 +2,7 @@
 
 ## Overview
 
-pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
+pnpm workspace monorepo using TypeScript. Contains the Fury Combat Systems website — a premium one-page marketing site for an elite martial arts and tactical training brand in Brooklyn, NY.
 
 ## Stack
 
@@ -10,8 +10,9 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **Node.js version**: 24
 - **Package manager**: pnpm
 - **TypeScript version**: 5.9
-- **API framework**: Express 5
-- **Database**: PostgreSQL + Drizzle ORM
+- **Frontend**: React + Vite + Tailwind CSS + Framer Motion
+- **API framework**: Express 5 (shared backend, not actively used by fury-combat)
+- **Database**: PostgreSQL + Drizzle ORM (not used by fury-combat)
 - **Validation**: Zod (`zod/v4`), `drizzle-zod`
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
