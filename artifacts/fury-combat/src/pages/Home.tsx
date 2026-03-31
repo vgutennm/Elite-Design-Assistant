@@ -10,8 +10,18 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const assetModules = import.meta.glob<string>('@assets/furycombat-website-photos-*', { eager: true, query: '?url', import: 'default' });
 
 function asset(filename: string): string | undefined {
-  const key = Object.keys(assetModules).find(k => k.endsWith(filename));
-  return key ? assetModules[key] : undefined;
+  const baseName = filename.replace(/\.[^.]+$/, '');
+  const ext = filename.match(/\.[^.]+$/)?.[0] || '';
+  const key = Object.keys(assetModules).find(k => {
+    const kName = k.split('/').pop() || '';
+    return kName.startsWith(baseName) && kName.endsWith(ext);
+  });
+  if (key) return assetModules[key];
+  const keyAnyExt = Object.keys(assetModules).find(k => {
+    const kName = k.split('/').pop() || '';
+    return kName.startsWith(baseName);
+  });
+  return keyAnyExt ? assetModules[keyAnyExt] : undefined;
 }
 
 function Img({ src, alt, className }: { src: string | undefined; alt: string; className?: string }) {
@@ -30,21 +40,26 @@ const imgLegend4 = asset('furycombat-website-photos-024.png');
 const imgLegend5 = asset('furycombat-website-photos-034.png');
 const imgPrivate1 = asset('furycombat-website-photos-017.jpg');
 const imgPrivate2 = asset('furycombat-website-photos-019.jpg');
-const imgPrivate3 = asset('furycombat-website-photos-040.png');
+const imgPrivate3 = asset('furycombat-website-photos-036.png');
 
 const galleryImageFiles = [
+  'furycombat-website-photos-021.jpg',
+  'furycombat-website-photos-016.jpg',
   'furycombat-website-photos-003.jpg',
   'furycombat-website-photos-008.jpg',
   'furycombat-website-photos-009.jpg',
   'furycombat-website-photos-011.jpg',
+  'furycombat-website-photos-013.jpg',
   'furycombat-website-photos-020.jpg',
   'furycombat-website-photos-023.png',
   'furycombat-website-photos-025.png',
-  'furycombat-website-photos-026.png',
   'furycombat-website-photos-027.png',
   'furycombat-website-photos-028.png',
-  'furycombat-website-photos-029.png',
   'furycombat-website-photos-030.png',
+  'furycombat-website-photos-031.png',
+  'furycombat-website-photos-033.png',
+  'furycombat-website-photos-035.png',
+  'furycombat-website-photos-037.png',
   'furycombat-website-photos-038.png',
   'furycombat-website-photos-039.png',
 ];
