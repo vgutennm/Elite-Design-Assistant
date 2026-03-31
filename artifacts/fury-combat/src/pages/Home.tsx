@@ -279,6 +279,68 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PRIVATE INSTRUCTION */}
+      <section id="instruction" className="py-32 bg-background relative">
+        <div className="absolute left-0 top-1/4 w-64 h-64 bg-primary/5 blur-[150px] pointer-events-none rounded-full"></div>
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center max-w-4xl mx-auto mb-20">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-4xl md:text-6xl font-serif font-bold uppercase mb-4 text-white">Private Instruction</h2>
+              <div className="text-primary font-bold tracking-widest uppercase text-sm mb-8">Elite Private Training with Grandmaster Dr. David Furie</div>
+              <p className="text-lg text-white/70 font-light leading-relaxed">
+                Fury Combat offers a private training experience for individuals seeking a higher standard of instruction in personal readiness, protective skill, physical conditioning, and situational control. Each session is tailored to the individual and designed around specific goals, background, lifestyle, and level of experience. Training is discreet, personalized, and grounded in real-world application. Training is currently available by private lesson and private workshop only.
+              </p>
+            </motion.div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="group relative bg-zinc-900/50 border border-white/10 p-8 hover:border-primary/50 transition-colors flex flex-col h-full"
+              >
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                
+                <h3 className="text-xl font-serif font-bold text-white mb-2 pr-12">{service.title}</h3>
+                <div className="text-primary font-mono text-sm font-bold mb-6">{service.price}</div>
+                <p className="text-white/60 text-sm leading-relaxed mb-8 flex-grow">
+                  {service.desc}
+                </p>
+                
+                <div className="flex flex-col gap-3 mt-auto">
+                  {serviceRoutes[service.title] && (
+                    <Button asChild className="w-full justify-center bg-primary hover:bg-primary/90 text-white rounded-none tracking-widest text-xs uppercase">
+                      <Link href={serviceRoutes[service.title]}>Learn More</Link>
+                    </Button>
+                  )}
+                  <Button asChild variant="outline" className="w-full justify-center border-white/20 hover:border-primary hover:bg-primary/10 rounded-none tracking-widest text-xs uppercase">
+                    <a href="tel:9173402911">{service.isWorkshop ? 'Request a Private Workshop' : 'Inquire by Phone'}</a>
+                  </Button>
+                  <Button asChild variant="ghost" className="w-full justify-center text-white/50 hover:text-white rounded-none tracking-widest text-xs uppercase">
+                    <a href="mailto:david.furie@gmail.com">{service.isWorkshop ? 'Contact David' : 'Inquire by Email'}</a>
+                  </Button>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          
+          <div className="mt-16 grid md:grid-cols-3 gap-4">
+            <Img src={imgPrivate1} alt="Training" className="w-full h-64 object-cover grayscale opacity-50 border border-white/10" />
+            <Img src={imgPrivate2} alt="Training" className="w-full h-64 object-cover grayscale opacity-50 border border-white/10" />
+            <Img src={imgPrivate3} alt="Training" className="w-full h-64 object-cover grayscale opacity-50 border border-white/10" />
+          </div>
+        </div>
+      </section>
+
       {/* THE SYSTEM */}
       <section id="system" className="py-24 bg-zinc-950 relative border-t border-white/5">
         <div className="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
@@ -502,68 +564,6 @@ export default function Home() {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* PRIVATE INSTRUCTION */}
-      <section id="instruction" className="py-32 bg-background relative">
-        <div className="absolute left-0 top-1/4 w-64 h-64 bg-primary/5 blur-[150px] pointer-events-none rounded-full"></div>
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center max-w-4xl mx-auto mb-20">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl md:text-6xl font-serif font-bold uppercase mb-4 text-white">Private Instruction</h2>
-              <div className="text-primary font-bold tracking-widest uppercase text-sm mb-8">Elite Private Training with Grandmaster Dr. David Furie</div>
-              <p className="text-lg text-white/70 font-light leading-relaxed">
-                Fury Combat offers a private training experience for individuals seeking a higher standard of instruction in personal readiness, protective skill, physical conditioning, and situational control. Each session is tailored to the individual and designed around specific goals, background, lifestyle, and level of experience. Training is discreet, personalized, and grounded in real-world application. Training is currently available by private lesson and private workshop only.
-              </p>
-            </motion.div>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="group relative bg-zinc-900/50 border border-white/10 p-8 hover:border-primary/50 transition-colors flex flex-col h-full"
-              >
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                
-                <h3 className="text-xl font-serif font-bold text-white mb-2 pr-12">{service.title}</h3>
-                <div className="text-primary font-mono text-sm font-bold mb-6">{service.price}</div>
-                <p className="text-white/60 text-sm leading-relaxed mb-8 flex-grow">
-                  {service.desc}
-                </p>
-                
-                <div className="flex flex-col gap-3 mt-auto">
-                  {serviceRoutes[service.title] && (
-                    <Button asChild className="w-full justify-center bg-primary hover:bg-primary/90 text-white rounded-none tracking-widest text-xs uppercase">
-                      <Link href={serviceRoutes[service.title]}>Learn More</Link>
-                    </Button>
-                  )}
-                  <Button asChild variant="outline" className="w-full justify-center border-white/20 hover:border-primary hover:bg-primary/10 rounded-none tracking-widest text-xs uppercase">
-                    <a href="tel:9173402911">{service.isWorkshop ? 'Request a Private Workshop' : 'Inquire by Phone'}</a>
-                  </Button>
-                  <Button asChild variant="ghost" className="w-full justify-center text-white/50 hover:text-white rounded-none tracking-widest text-xs uppercase">
-                    <a href="mailto:david.furie@gmail.com">{service.isWorkshop ? 'Contact David' : 'Inquire by Email'}</a>
-                  </Button>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-          
-          <div className="mt-16 grid md:grid-cols-3 gap-4">
-            <Img src={imgPrivate1} alt="Training" className="w-full h-64 object-cover grayscale opacity-50 border border-white/10" />
-            <Img src={imgPrivate2} alt="Training" className="w-full h-64 object-cover grayscale opacity-50 border border-white/10" />
-            <Img src={imgPrivate3} alt="Training" className="w-full h-64 object-cover grayscale opacity-50 border border-white/10" />
-          </div>
-        </div>
-      </section>
 
       {/* CONTACT */}
       <section id="contact" className="py-32 bg-zinc-950 border-t border-white/5 relative">
