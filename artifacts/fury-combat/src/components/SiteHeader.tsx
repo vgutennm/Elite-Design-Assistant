@@ -64,7 +64,7 @@ export default function SiteHeader() {
             <span className="font-serif text-2xl font-bold tracking-widest text-white group-hover:text-primary transition-colors">FURY<span className="text-primary group-hover:text-white transition-colors">COMBAT</span></span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8 ml-8">
             {mainNavLinks.map((link) =>
               link.isHash ? (
                 <a key={link.name} href={link.href} onClick={(e) => { e.preventDefault(); handleNavClick(link.href, true); }} className="text-sm font-medium text-white/70 hover:text-white transition-colors uppercase tracking-widest cursor-pointer">
