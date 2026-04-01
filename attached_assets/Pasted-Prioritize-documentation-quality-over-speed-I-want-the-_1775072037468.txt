@@ -1,0 +1,288 @@
+Prioritize documentation quality over speed. I want the ZIP optimized for AI analysis and future pattern extraction.
+
+I want you to create a complete downloadable ZIP package of this app specifically for AI analysis and playbook extraction.
+
+This is not a normal backup export.
+
+The purpose of this package is to give my OpenAI agent everything it needs to reverse-engineer this app and extract:
+- my best practices
+- my recurring feature patterns
+- my UI/UX preferences
+- my business rules
+- my workflows
+- my data structures
+- my integrations
+- my security/auth patterns
+- my reporting/export patterns
+- my admin vs user role logic
+- my help/training/documentation patterns
+- my deployment and production setup patterns
+- reusable modules that should become part of a master Replit app-spec playbook for future apps
+
+I want this ZIP structured for AI understanding first, not just developer backup.
+
+Please create the package with this exact structure if possible:
+
+/app-source
+  full source code organized cleanly
+
+/docs
+  01-app-overview.md
+  02-user-roles-and-permissions.md
+  03-main-workflows.md
+  04-ui-pages-and-components.md
+  05-database-schema-and-data-model.md
+  06-business-rules.md
+  07-validation-and-error-handling.md
+  08-auth-and-security.md
+  09-notifications-and-messaging.md
+  10-reporting-and-exports.md
+  11-integrations.md
+  12-help-guide-and-training.md
+  13-admin-functions.md
+  14-deployment-and-environments.md
+  15-known-issues-and-tech-debt.md
+  16-reusable-patterns-and-modules.md
+  17-ai-playbook-extraction-notes.md
+  18-file-manifest.md
+
+/config
+  environment-variables-template.md
+  deployment-notes.md
+  run-instructions.md
+
+/database
+  schema files
+  migrations
+  model definitions
+  seed structure notes
+  relationship notes
+
+Important instructions for every document:
+Write each document in plain English for AI analysis, not just technical shorthand.
+Assume the reader is an AI agent trying to extract repeatable app-building intelligence from this project.
+
+For the documents, include the following:
+
+1. 01-app-overview.md
+Explain:
+- what the app does
+- who it is for
+- what business problem it solves
+- what the core value is
+- what version/stage this app is in
+- what success for the app looks like
+
+2. 02-user-roles-and-permissions.md
+Explain:
+- all user types
+- admin vs user permissions
+- what each role can see, do, create, edit, delete, approve, export, or manage
+- any hidden role logic or restrictions
+
+3. 03-main-workflows.md
+Document the main end-to-end workflows step by step.
+Examples:
+- user onboarding flow
+- login flow
+- create/edit/save flow
+- approval flow
+- notification flow
+- reporting flow
+- help/support flow
+- admin workflow
+
+4. 04-ui-pages-and-components.md
+Explain:
+- all screens/pages
+- dashboard layout
+- card/panel/clickable navigation patterns
+- major forms
+- tables/lists
+- filters
+- buttons/actions
+- modals/drawers
+- reusable components
+- what makes the UI easy for non-technical users
+
+5. 05-database-schema-and-data-model.md
+Explain:
+- entities/tables/models
+- important fields
+- relationships
+- statuses
+- ownership rules
+- audit/logging data if present
+- how data flows through the app
+- dev vs production database considerations
+
+6. 06-business-rules.md
+Capture the core business logic in plain English.
+Examples:
+- state/status rules
+- approval requirements
+- automation triggers
+- who can do what and when
+- required fields
+- default values
+- record lifecycle rules
+- operational rules the app enforces
+
+7. 07-validation-and-error-handling.md
+Explain:
+- form validation
+- required fields
+- edge cases handled
+- invalid login behavior
+- wrong email/password behavior
+- duplicate data handling
+- upload errors
+- system messages
+- graceful failure behavior
+
+8. 08-auth-and-security.md
+Explain:
+- authentication method
+- session handling
+- remember login behavior
+- password rules
+- reset flow
+- reCAPTCHA if present
+- authorization/permissions
+- environment/secrets handling
+- anything important for secure production deployment
+
+9. 09-notifications-and-messaging.md
+Explain:
+- whether the app has a notifications or messages center
+- how notifications are created
+- how they are displayed
+- how they are selected
+- mark read/unread behavior
+- badges/counts
+- links to related records
+- admin notification controls if present
+
+10. 10-reporting-and-exports.md
+Explain:
+- reports available
+- dashboards/analytics
+- export types
+- filters/search/sort
+- what data is exposed to admins vs users
+- business purpose of each report/export
+
+11. 11-integrations.md
+List and explain all integrations:
+- email
+- SMS
+- payments
+- CRM
+- calendar
+- webhooks
+- APIs
+- file storage
+- AI services
+- auth providers
+For each integration explain what it is used for and where it appears in the workflow.
+
+12. 12-help-guide-and-training.md
+Explain:
+- whether there is a help guide or training section
+- how it is structured
+- support/help content areas
+- video placeholders or training modules
+- searchable help behavior
+- how new users are expected to learn the system
+
+13. 13-admin-functions.md
+Explain:
+- admin dashboard functions
+- user management
+- data oversight
+- approvals
+- reporting
+- system settings
+- logs
+- exports
+- content/config management
+
+14. 14-deployment-and-environments.md
+Explain:
+- how the app runs locally/development
+- how it runs in Replit
+- how it is built
+- how it is deployed
+- what services it depends on
+- what environment variables are required
+- dev/staging/prod differences
+- known deployment gotchas
+- domain/custom URL considerations
+
+15. 15-known-issues-and-tech-debt.md
+Document:
+- known bugs
+- incomplete features
+- brittle areas
+- workarounds
+- shortcuts taken
+- anything that should be cleaned up later
+
+16. 16-reusable-patterns-and-modules.md
+This is very important.
+Identify the pieces of this app that could be reused across future apps, such as:
+- login/auth system
+- dashboard shell
+- role model
+- notification center
+- reporting/export engine
+- admin panel
+- file upload/import flow
+- settings/config patterns
+- help guide structure
+- form handling
+- validation patterns
+- error message patterns
+- status workflow patterns
+For each reusable pattern, explain:
+- what it does
+- why it is reusable
+- where it appears in this app
+- what future apps could use it
+
+17. 17-ai-playbook-extraction-notes.md
+This is the most important file.
+Create a dedicated document for my OpenAI agent that explains:
+- what this app reveals about my preferred way of building apps
+- what recurring standards appear in this project
+- what should become default requirements in future app specs
+- what should become optional modules in future app specs
+- what mistakes or omissions in this app should become prevention rules in future app specs
+- what questions should always be asked before building a similar app
+- what pieces of this app are worth turning into a standard reusable template
+
+18. 18-file-manifest.md
+Create a readable manifest of what is included in the ZIP and where to find it.
+
+Additional packaging requirements:
+- Include full source code needed for analysis
+- Exclude secrets, private keys, and sensitive values
+- Do not include unnecessary cache folders or huge dependency folders unless required
+- If there are items that cannot be exported, document them clearly in the manifest
+- Prefer readability and analysis value over raw dumping of files
+- If possible, include comments in code where helpful for understanding major logic
+- If possible, add short README notes inside complex folders
+
+Also create:
+- environment-variables-template.md with variable names and what each one does, but no secret values
+- deployment-notes.md with plain-English deployment instructions
+- run-instructions.md with how to run the app locally and in Replit
+
+Final output required:
+1. one clean downloadable ZIP file
+2. a short summary of what is included
+3. a note explaining anything that could not be included
+4. a recommendation for which files my OpenAI agent should read first to extract a reusable app-spec playbook
+
+Goal:
+I want my OpenAI agent to use this ZIP to build a master Replit app discovery and specification playbook based on the real intelligence already embedded in this app, including its best practices, workflows, modules, business rules, and architectural patterns.
