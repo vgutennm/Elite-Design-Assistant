@@ -483,6 +483,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FEATURED VIDEO */}
+      <section id="video" className="py-24 relative bg-background border-t border-white/5">
+        <div className="absolute left-1/2 -translate-x-1/2 top-1/4 w-[60%] h-64 bg-primary/5 blur-[180px] pointer-events-none rounded-full" />
+        <div className="container mx-auto px-6 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-3xl mx-auto mb-12"
+          >
+            <div className="text-primary font-bold tracking-widest uppercase text-xs mb-3">Watch</div>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold uppercase mb-4 text-white">Unleash Your Inner Warrior</h2>
+            <p className="text-base text-white/60 font-light leading-relaxed">
+              A glimpse inside the Fury Combat training environment with Grandmaster Dr. David Furie.
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="relative w-full overflow-hidden border border-white/10 bg-zinc-900" style={{ paddingTop: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/17TnRduoqLw"
+                title="Unleash Your Inner Warrior at Fury Combat"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* THE LEGEND: DAVID FURIE */}
       <section id="legend" className="py-32 relative bg-background">
         <div className="container mx-auto px-6">

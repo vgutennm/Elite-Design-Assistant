@@ -1221,6 +1221,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/womens-private-safety-training", "/private-instruction", "/family-protection-session"],
     heroImage: "furycombat-website-photos-028.png",
+    videos: [
+      {
+        title: "Fury Combat NYC: Self Defense & Combat",
+        embedUrl: "https://www.youtube.com/embed/lc5-Rp6ZCZE",
+        description: "Grandmaster Dr. David Furie demonstrates the Fury Combat approach to self defense and real-world combat application.",
+      },
+    ],
   },
   {
     title: "Jujitsu",
@@ -1272,6 +1279,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/mixed-martial-arts-in-brooklyn", "/self-defense-in-brooklyn", "/private-instruction"],
     heroImage: "furycombat-website-photos-030.png",
+    videos: [
+      {
+        title: "Fury Combat NYC: Jujitsu & Self Defense",
+        embedUrl: "https://www.youtube.com/embed/Zu_CTxnVnT0",
+        description: "A look at leverage, control, and practical close-combat skill from the Fury Combat Jujitsu program.",
+      },
+    ],
   },
   {
     title: "Ninjutsu",
@@ -1323,6 +1337,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/weapons-and-tactics-in-brooklyn", "/advanced-tactical-instruction", "/private-instruction"],
     heroImage: "furycombat-website-photos-032.png",
+    videos: [
+      {
+        title: "Ninjutsu in Brooklyn with Grandmaster Dr. David Furie",
+        embedUrl: "https://www.youtube.com/embed/u2DZiwY8WQA",
+        description: "Inside the Fury Combat Ninjutsu Shadow Warriors program — adaptability, awareness, and practical combat strategy.",
+      },
+    ],
   },
   {
     title: "Kickboxing",
@@ -1374,6 +1395,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/mixed-martial-arts-in-brooklyn", "/tactical-conditioning", "/private-instruction"],
     heroImage: "furycombat-website-photos-025.png",
+    videos: [
+      {
+        title: "Fury Combat NYC: Kickboxing & MMA",
+        embedUrl: "https://www.youtube.com/embed/EU5wL_VsvEY",
+        description: "Striking skill, footwork, and conditioning from the Fury Combat kickboxing and MMA program.",
+      },
+    ],
   },
   {
     title: "Mixed Martial Arts",
@@ -1425,6 +1453,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/kickboxing-in-brooklyn", "/jujitsu-in-brooklyn", "/tactical-conditioning"],
     heroImage: "furycombat-website-photos-027.png",
+    videos: [
+      {
+        title: "Fury Combat NYC: Tactics and Defense Training, Episode 1",
+        embedUrl: "https://www.youtube.com/embed/y-MLTEh0INI",
+        description: "An inside look at full-spectrum combat training combining striking, grappling, and real-world tactics.",
+      },
+    ],
   },
   {
     title: "Weapons and Tactics",
@@ -1476,6 +1511,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/ninjutsu-in-brooklyn", "/advanced-tactical-instruction", "/private-instruction"],
     heroImage: "furycombat-website-photos-034.png",
+    videos: [
+      {
+        title: "Fury Combat NYC: Combat Martial Arts, Self Defense & Survival Tactics",
+        embedUrl: "https://www.youtube.com/embed/vdCp0DTsQok",
+        description: "Weapons familiarity, tactical movement, and disciplined response from the Fury Combat survival tactics program.",
+      },
+    ],
   },
 ];
 
@@ -1978,6 +2020,42 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* FEATURED VIDEO */}
+      <section id="video" className="py-24 relative bg-background border-t border-white/5">
+        <div className="absolute left-1/2 -translate-x-1/2 top-1/4 w-[60%] h-64 bg-primary/5 blur-[180px] pointer-events-none rounded-full" />
+        <div className="container mx-auto px-6 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-3xl mx-auto mb-12"
+          >
+            <div className="text-primary font-bold tracking-widest uppercase text-xs mb-3">Watch</div>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold uppercase mb-4 text-white">Unleash Your Inner Warrior</h2>
+            <p className="text-base text-white/60 font-light leading-relaxed">
+              A glimpse inside the Fury Combat training environment with Grandmaster Dr. David Furie.
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="relative w-full overflow-hidden border border-white/10 bg-zinc-900" style={{ paddingTop: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/17TnRduoqLw"
+                title="Unleash Your Inner Warrior at Fury Combat"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+          </motion.div>
         </div>
       </section>
 

@@ -518,6 +518,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/womens-private-safety-training", "/private-instruction", "/family-protection-session"],
     heroImage: "furycombat-website-photos-028.png",
+    videos: [
+      {
+        title: "Fury Combat NYC: Self Defense & Combat",
+        embedUrl: "https://www.youtube.com/embed/lc5-Rp6ZCZE",
+        description: "Grandmaster Dr. David Furie demonstrates the Fury Combat approach to self defense and real-world combat application.",
+      },
+    ],
   },
   {
     title: "Jujitsu",
@@ -569,6 +576,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/mixed-martial-arts-in-brooklyn", "/self-defense-in-brooklyn", "/private-instruction"],
     heroImage: "furycombat-website-photos-030.png",
+    videos: [
+      {
+        title: "Fury Combat NYC: Jujitsu & Self Defense",
+        embedUrl: "https://www.youtube.com/embed/Zu_CTxnVnT0",
+        description: "A look at leverage, control, and practical close-combat skill from the Fury Combat Jujitsu program.",
+      },
+    ],
   },
   {
     title: "Ninjutsu",
@@ -620,6 +634,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/weapons-and-tactics-in-brooklyn", "/advanced-tactical-instruction", "/private-instruction"],
     heroImage: "furycombat-website-photos-032.png",
+    videos: [
+      {
+        title: "Ninjutsu in Brooklyn with Grandmaster Dr. David Furie",
+        embedUrl: "https://www.youtube.com/embed/u2DZiwY8WQA",
+        description: "Inside the Fury Combat Ninjutsu Shadow Warriors program — adaptability, awareness, and practical combat strategy.",
+      },
+    ],
   },
   {
     title: "Kickboxing",
@@ -671,6 +692,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/mixed-martial-arts-in-brooklyn", "/tactical-conditioning", "/private-instruction"],
     heroImage: "furycombat-website-photos-025.png",
+    videos: [
+      {
+        title: "Fury Combat NYC: Kickboxing & MMA",
+        embedUrl: "https://www.youtube.com/embed/EU5wL_VsvEY",
+        description: "Striking skill, footwork, and conditioning from the Fury Combat kickboxing and MMA program.",
+      },
+    ],
   },
   {
     title: "Mixed Martial Arts",
@@ -722,6 +750,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/kickboxing-in-brooklyn", "/jujitsu-in-brooklyn", "/tactical-conditioning"],
     heroImage: "furycombat-website-photos-027.png",
+    videos: [
+      {
+        title: "Fury Combat NYC: Tactics and Defense Training, Episode 1",
+        embedUrl: "https://www.youtube.com/embed/y-MLTEh0INI",
+        description: "An inside look at full-spectrum combat training combining striking, grappling, and real-world tactics.",
+      },
+    ],
   },
   {
     title: "Weapons and Tactics",
@@ -773,6 +808,13 @@ export const allServices: ServiceData[] = [
     ],
     relatedSlugs: ["/ninjutsu-in-brooklyn", "/advanced-tactical-instruction", "/private-instruction"],
     heroImage: "furycombat-website-photos-034.png",
+    videos: [
+      {
+        title: "Fury Combat NYC: Combat Martial Arts, Self Defense & Survival Tactics",
+        embedUrl: "https://www.youtube.com/embed/vdCp0DTsQok",
+        description: "Weapons familiarity, tactical movement, and disciplined response from the Fury Combat survival tactics program.",
+      },
+    ],
   },
 ];
 
