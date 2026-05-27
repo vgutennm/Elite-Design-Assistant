@@ -273,7 +273,7 @@ export default function Home() {
             className="max-w-4xl mx-auto text-center"
           >
             <p className="text-xl md:text-3xl font-serif leading-tight text-white/90">
-              Fury Combat Systems is a Brooklyn-based private training brand led by Grandmaster Dr. David Furie. The Fury System blends practical hand-to-hand instruction, tactical awareness, strategic thinking, and personal readiness for clients who want real-world capability—not generic training.
+              Fury Combat Systems is a Brooklyn-based private training brand led by Grandmaster Dr. David Furie. The Fury System blends practical hand-to-hand instruction, tactical awareness, strategic thinking, and personal readiness for clients who want real-world capability, not generic training.
             </p>
           </motion.div>
         </div>
@@ -447,7 +447,7 @@ export default function Home() {
                   Grandmaster Dr. David Furie is a 10th degree black belt / dan, a retired Secret Service Operative, a former member of the military's elite Special Forces unit, a world champion fighter, and an International Combat Martial Arts Master.
                 </motion.p>
                 <motion.p variants={fadeInUp}>
-                  He developed the Fury System to reflect the evolution of combat for the modern world—training that sharpens not only physical capability, but also mental toughness, emotional control, and readiness under pressure.
+                  He developed the Fury System to reflect the evolution of combat for the modern world, training that sharpens not only physical capability, but also mental toughness, emotional control, and readiness under pressure.
                 </motion.p>
                 <motion.p variants={fadeInUp}>
                   For those seeking direct access to high-level instruction shaped by decades of experience, Fury Combat offers a rare private training environment grounded in real-world application.
