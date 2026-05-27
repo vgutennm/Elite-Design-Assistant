@@ -100,7 +100,7 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
 
       <SiteHeader />
 
-      <section className="relative min-h-[70vh] flex items-end pt-20 pb-20 overflow-hidden">
+      <section className="relative min-h-[55vh] md:min-h-[70vh] flex items-end pt-28 pb-16 md:pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           {heroImg ? (
             <img src={heroImg} alt={service.title} className="w-full h-full object-cover object-center opacity-30" />
