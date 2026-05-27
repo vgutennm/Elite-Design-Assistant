@@ -163,6 +163,40 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
         </div>
       </section>
 
+      {service.videos && service.videos.length > 0 && (
+        <section className="py-20 bg-background border-t border-white/5">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+            >
+              <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-serif font-bold uppercase mb-8 text-white">Training Video</motion.h2>
+              <div className="space-y-8">
+                {service.videos.map((video, i) => (
+                  <motion.div key={i} variants={fadeInUp} className="space-y-4">
+                    <div className="relative w-full overflow-hidden border border-white/10 bg-black" style={{ paddingBottom: '56.25%' }}>
+                      <iframe
+                        src={video.embedUrl}
+                        title={video.title}
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                      />
+                    </div>
+                    {video.description && (
+                      <p className="text-white/60 text-sm leading-relaxed">{video.description}</p>
+                    )}
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      )}
+
       <section className="py-20 bg-background border-t border-white/5">
         <div className="container mx-auto px-6 max-w-4xl">
           <motion.div

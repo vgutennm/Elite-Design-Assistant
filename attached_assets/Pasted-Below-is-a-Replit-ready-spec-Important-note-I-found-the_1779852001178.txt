@@ -1,0 +1,317 @@
+Below is a Replit-ready spec.
+
+Important note: I found the written service content on all 6 shared pages, but the page text available did **not expose embedded video URLs/iframes**. Tell Replit to inspect the original pages/media library and carry over any embedded videos found.
+
+# Replit Spec: Add MMA + Training Services to Fury Combat Website
+
+## Goal
+
+Update the Fury Combat Systems React/Vite website to add 6 new service pages and service cards for:
+
+1. Self Defense in Brooklyn
+2. Jujitsu in Brooklyn
+3. Ninjutsu in Brooklyn
+4. Kickboxing in Brooklyn
+5. Mixed Martial Arts in Brooklyn
+6. Weapons and Tactics in Brooklyn
+
+The current website uses React, TypeScript, Vite, Tailwind, wouter routing, shared `ServiceDetail` template, and all service data in `src/data/services.ts`. Keep this structure. 
+
+## Existing Site Rules to Preserve
+
+Do not break these:
+
+* Dark premium Fury Combat aesthetic
+* Cinzel headings, Inter body
+* No emojis
+* No fake stats
+* No testimonials unless real
+* No pricing in UI
+* Rounded-none buttons
+* Mobile-first / responsive layout
+* Services must appear in desktop dropdown, mobile services dropdown, footer, contact form service selector, and homepage services grid
+* Maintain shared ServiceDetail template
+* Use `/:slug` routing already in place
+* Optimize all pages for mobile
+
+## New Routes
+
+Add these service routes:
+
+```ts
+"Self Defense": "/self-defense-in-brooklyn",
+"Jujitsu": "/jujitsu-in-brooklyn",
+"Ninjutsu": "/ninjutsu-in-brooklyn",
+"Kickboxing": "/kickboxing-in-brooklyn",
+"Mixed Martial Arts": "/mixed-martial-arts-in-brooklyn",
+"Weapons and Tactics": "/weapons-and-tactics-in-brooklyn",
+```
+
+## Content Direction by Service
+
+### 1. Self Defense in Brooklyn
+
+Source content notes: The current page explains that self-defense prepares people to protect themselves and family, teaches defense, where to attack, preparation, overcoming fear, awareness, instincts, and use of everyday objects. ([FURY Combat NYC][1])
+
+SEO title:
+Self Defense in Brooklyn | Fury Combat Systems
+
+Meta description:
+Private self defense training in Brooklyn with Grandmaster Dr. David Furie. Learn awareness, prevention, hand-to-hand defense, confidence, and real-world response.
+
+Overview:
+Self Defense training at Fury Combat Systems is built for real-world readiness. Clients learn practical awareness, prevention, hand-to-hand defense, decisive response, and the mental control needed to act under pressure. The goal is not fear-based training. The goal is confidence, preparation, and the ability to protect yourself and the people who matter to you.
+
+Training focus:
+
+* Situational awareness
+* Threat recognition
+* Defensive movement
+* Hand-to-hand protection
+* Using natural body weapons
+* Everyday-object awareness
+* Fear control
+* Confidence under pressure
+
+FAQ ideas:
+
+* Is this beginner-friendly?
+* Is self defense useful if I am not athletic?
+* Can this focus on street safety in Brooklyn?
+* Do you teach awareness and prevention?
+* Is this private instruction only?
+
+### 2. Jujitsu in Brooklyn
+
+Source content notes: The Jujitsu page focuses on close combat, defending against stronger or armed attackers, leverage, technique, fluidity, control, unbalancing, physical benefits, and mental discipline. ([FURY Combat NYC][2])
+
+SEO title:
+Jujitsu in Brooklyn | Private Jujitsu Training
+
+Meta description:
+Private Jujitsu training in Brooklyn with Grandmaster Dr. David Furie. Learn leverage, control, close-combat skill, grappling concepts, and practical self-defense.
+
+Overview:
+Jujitsu training at Fury Combat Systems focuses on leverage, positioning, control, and practical close-combat skill. It is designed for clients who want to understand how technique can overcome size, strength, and pressure. Training may include stand-up control, takedown awareness, grappling concepts, balance disruption, and self-defense application.
+
+Training focus:
+
+* Leverage and control
+* Close-combat positioning
+* Balance disruption
+* Defensive grappling
+* Escapes and counters
+* Ground awareness
+* Practical self-defense application
+* Mental discipline
+
+### 3. Ninjutsu in Brooklyn
+
+Source content notes: The Ninjutsu page positions the discipline around hand-to-hand combat, defensive movement, weapons, adaptability, stealth/deception concepts, mind-body discipline, and training under David Furie. ([FURY Combat NYC][3])
+
+SEO title:
+Ninjutsu in Brooklyn | Private Ninjutsu Training
+
+Meta description:
+Private Ninjutsu training in Brooklyn with Grandmaster Dr. David Furie. Learn adaptability, movement, awareness, weapons concepts, and real-world combat strategy.
+
+Overview:
+Ninjutsu training at Fury Combat Systems is built around adaptability, awareness, movement, and practical combat strategy. The training connects hand-to-hand skill, defensive movement, weapons concepts, and mental discipline into a private instruction format shaped around the client’s level and goals.
+
+Training focus:
+
+* Adaptability
+* Stealth and awareness concepts
+* Hand-to-hand movement
+* Defensive tactics
+* Weapons familiarity
+* Mind-body discipline
+* Precision and timing
+* Real-world application
+
+### 4. Kickboxing in Brooklyn
+
+Source content notes: The Kickboxing page emphasizes punches, kicks, footwork, conditioning, guard, reflexes, balance, coordination, self-defense, MMA crossover, and training for beginners through experienced fighters. ([FURY Combat NYC][4])
+
+SEO title:
+Kickboxing in Brooklyn | Private Kickboxing Training
+
+Meta description:
+Private kickboxing training in Brooklyn with Grandmaster Dr. David Furie. Build striking skill, footwork, conditioning, balance, reflexes, and self-defense readiness.
+
+Overview:
+Kickboxing training at Fury Combat Systems develops powerful striking, movement, conditioning, and practical defensive skill. Clients work on punches, kicks, footwork, guard, balance, timing, and reaction in a private training format that can support fitness, self-defense, or mixed martial arts development.
+
+Training focus:
+
+* Punching and kicking mechanics
+* Footwork
+* Guard and defensive awareness
+* Balance and coordination
+* Pad work
+* Reaction drills
+* Conditioning
+* Self-defense striking
+
+### 5. Mixed Martial Arts in Brooklyn
+
+Source content notes: The MMA page explains that MMA combines striking and grappling, standing and ground fighting, sprawl-and-brawl, clinch fighting, ground-and-pound, and submission grappling, under Grandmaster Dr. David Furie. ([FURY Combat NYC][5])
+
+SEO title:
+Mixed Martial Arts in Brooklyn | Private MMA Training
+
+Meta description:
+Private mixed martial arts training in Brooklyn with Grandmaster Dr. David Furie. Learn striking, grappling, clinch work, ground awareness, and complete fighting skill.
+
+Overview:
+Mixed Martial Arts training at Fury Combat Systems combines striking, grappling, clinch awareness, ground control, and practical fighting strategy. Clients learn how different ranges of combat connect, including stand-up fighting, defensive movement, close-range control, and ground awareness.
+
+Training focus:
+
+* Striking
+* Grappling fundamentals
+* Clinch fighting
+* Ground awareness
+* Submission concepts
+* Sprawl-and-brawl strategy
+* Defensive positioning
+* Full-spectrum combat readiness
+
+### 6. Weapons and Tactics in Brooklyn
+
+Source content notes: The Weapons and Tactics page focuses on weapons training, survival tactics, discipline, MMA crossover, beginner-to-advanced development, and taking fighters to the next level. ([FURY Combat NYC][6])
+
+SEO title:
+Weapons and Tactics in Brooklyn | Fury Combat Systems
+
+Meta description:
+Private weapons and tactics training in Brooklyn with Grandmaster Dr. David Furie. Learn awareness, tactical movement, weapons familiarity, discipline, and practical readiness.
+
+Overview:
+Weapons and Tactics training at Fury Combat Systems introduces clients to practical awareness, tactical movement, weapons familiarity, and disciplined response. The focus is controlled, responsible instruction designed to build readiness, coordination, confidence, and a deeper understanding of real-world defensive situations.
+
+Training focus:
+
+* Weapons familiarity
+* Tactical movement
+* Awareness and distance
+* Responsible control
+* Defensive positioning
+* Improvised-object awareness
+* Coordination and timing
+* Practical readiness
+
+## Video Requirement
+
+Add a new optional `videoUrl` or `videos` field to `ServiceData`.
+
+```ts
+videos?: {
+  title: string;
+  embedUrl: string;
+  description?: string;
+}[];
+```
+
+For each of the 6 new pages:
+
+* Inspect the original WordPress page source and media embeds.
+* If a YouTube/Vimeo/video iframe exists, add it to the service page.
+* Display videos in a responsive 16:9 section titled “Training Video”.
+* If no video is found, do not show an empty video section.
+* Use lazy loading.
+* Make videos mobile responsive.
+
+## Service Page Layout Updates
+
+Update `ServiceDetail.tsx` to support:
+
+1. Hero
+2. Overview
+3. Training Video, only if video exists
+4. Who This Is For
+5. What You Get
+6. Training Focus
+7. Likely Outcomes
+8. Why Choose This
+9. FAQ
+10. Related Services
+11. CTA
+
+## Homepage Updates
+
+Update homepage services grid to include all new services.
+
+Recommended section title update:
+
+“Private Martial Arts, MMA, Self Defense & Tactical Training in Brooklyn”
+
+Add cards for:
+
+* Self Defense
+* Jujitsu
+* Ninjutsu
+* Kickboxing
+* Mixed Martial Arts
+* Weapons and Tactics
+
+## SEO / LLM SEO Requirements
+
+For each new service page:
+
+* Unique H1
+* Unique meta title
+* Unique meta description
+* FAQ section
+* FAQ JSON-LD
+* Service schema JSON-LD
+* LocalBusiness/SportsActivityLocation relationship
+* Internal links to related services
+* Natural phrases:
+
+  * private martial arts training in Brooklyn
+  * self defense in Brooklyn
+  * MMA training in Brooklyn
+  * kickboxing in Brooklyn
+  * jujitsu in Brooklyn
+  * ninjutsu in Brooklyn
+  * weapons and tactics training in Brooklyn
+  * Grandmaster Dr. David Furie
+  * Fury Combat Systems
+
+Add direct-answer blocks where appropriate, for example:
+
+“What does this training help with?”
+“This training helps clients build awareness, confidence, practical movement, defensive skill, and readiness under pressure.”
+
+## Mobile Optimization
+
+Replit must verify:
+
+* No horizontal overflow
+* Service cards stack cleanly on mobile
+* Videos maintain 16:9 ratio
+* Buttons are full-width on mobile
+* Header dropdown works on mobile
+* Services list remains scrollable on small screens
+* Text sizes are readable
+* CTA buttons are touch-friendly
+* Related services become one-column on mobile
+* Contact form service selector includes new services
+
+## Acceptance Criteria
+
+* All 6 new services appear in navigation, footer, homepage grid, contact dropdown, and direct URLs.
+* Each service page has polished SEO/LLM content.
+* Videos are included if found on the source pages.
+* No pricing appears.
+* Site remains consistent with current Fury Combat branding.
+* Build passes with `pnpm --filter @workspace/fury-combat run build`.
+* Typecheck passes with `pnpm --filter @workspace/fury-combat run typecheck`.
+
+[1]: https://furycombat.com/classes2023/self-defense-in-brooklyn/ "Self Defense in Brooklyn - FURY Combat NYC - Mixed Martial Arts Classes in Brooklyn New York"
+[2]: https://furycombat.com/classes2023/jujitsu-in-brooklyn/ "Jujitsu in Brooklyn - FURY Combat NYC - Mixed Martial Arts Classes in Brooklyn New York"
+[3]: https://furycombat.com/classes2023/ninjutsu-in-brooklyn/ "Ninjutsu in Brooklyn - FURY Combat NYC - Mixed Martial Arts Classes in Brooklyn New York"
+[4]: https://furycombat.com/classes2023/kickboxing-in-brooklyn/ "Kickboxing in Brooklyn - FURY Combat NYC - Mixed Martial Arts Classes in Brooklyn New York"
+[5]: https://furycombat.com/classes2023/mixed-martial-arts-in-brooklyn/ "Mixed Martial Arts in Brooklyn - FURY Combat NYC - Mixed Martial Arts Classes in Brooklyn New York"
+[6]: https://furycombat.com/classes2023/weapons-and-tactics-in-brooklyn/ "Weapons and Tactics in Brooklyn - FURY Combat NYC - Mixed Martial Arts Classes in Brooklyn New York"

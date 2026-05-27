@@ -119,6 +119,42 @@ const services = [
     price: "Starting at $1,500",
     desc: "Private workshops for companies, organizations, leadership teams, women's groups, and select audiences seeking a refined, practical training experience in awareness, de-escalation, readiness, and personal protection principles.",
     isWorkshop: true
+  },
+  {
+    title: "Self Defense",
+    price: "",
+    desc: "Private self defense training in Brooklyn built around awareness, prevention, hand-to-hand defense, confidence, and decisive real-world response.",
+    isWorkshop: false
+  },
+  {
+    title: "Jujitsu",
+    price: "",
+    desc: "Private Jujitsu training in Brooklyn focused on leverage, control, balance disruption, grappling concepts, and practical close-combat skill.",
+    isWorkshop: false
+  },
+  {
+    title: "Ninjutsu",
+    price: "",
+    desc: "Private Ninjutsu training in Brooklyn built around adaptability, awareness, movement, weapons concepts, and real-world combat strategy.",
+    isWorkshop: false
+  },
+  {
+    title: "Kickboxing",
+    price: "",
+    desc: "Private kickboxing training in Brooklyn for striking skill, footwork, conditioning, balance, reflexes, and self-defense readiness.",
+    isWorkshop: false
+  },
+  {
+    title: "Mixed Martial Arts",
+    price: "",
+    desc: "Private MMA training in Brooklyn combining striking, grappling, clinch fighting, ground awareness, and full-spectrum combat readiness.",
+    isWorkshop: false
+  },
+  {
+    title: "Weapons and Tactics",
+    price: "",
+    desc: "Private weapons and tactics training in Brooklyn focused on awareness, tactical movement, weapons familiarity, discipline, and practical readiness.",
+    isWorkshop: false
   }
 ];
 
@@ -290,7 +326,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl md:text-6xl font-serif font-bold uppercase mb-4 text-white">Private Instruction</h2>
+              <h2 className="text-4xl md:text-6xl font-serif font-bold uppercase mb-4 text-white">Private Martial Arts, MMA, Self Defense &amp; Tactical Training in Brooklyn</h2>
               <div className="text-primary font-bold tracking-widest uppercase text-sm mb-8">Elite Private Training with Grandmaster Dr. David Furie</div>
               <p className="text-lg text-white/70 font-light leading-relaxed">
                 Fury Combat offers a private training experience for individuals seeking a higher standard of instruction in personal readiness, protective skill, physical conditioning, and situational control. Each session is tailored to the individual and designed around specific goals, background, lifestyle, and level of experience. Training is discreet, personalized, and grounded in real-world application. Training is currently available by private lesson and private workshop only.
