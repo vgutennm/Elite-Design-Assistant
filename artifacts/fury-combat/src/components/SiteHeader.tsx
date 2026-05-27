@@ -3,7 +3,7 @@ import { Link, useLocation } from 'wouter';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { allServices } from '@/data/services';
+import { categories, categoryOrder, getServicesByCategory } from '@/data/services';
 
 const mainNavLinks = [
   { name: 'Home', href: '/', isHash: false },
@@ -80,6 +80,9 @@ export default function SiteHeader() {
             <div ref={dropdownRef} className="relative">
               <button
                 onClick={() => setServicesOpen(!servicesOpen)}
+                aria-expanded={servicesOpen}
+                aria-controls="desktop-services-menu"
+                aria-haspopup="menu"
                 className="text-sm font-medium text-white/70 hover:text-white transition-colors uppercase tracking-widest flex items-center gap-1"
               >
                 Services <ChevronDown size={14} className={`transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
@@ -92,18 +95,31 @@ export default function SiteHeader() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full right-0 mt-4 w-72 bg-zinc-900/95 backdrop-blur-xl border border-white/10 shadow-2xl py-2"
+                    id="desktop-services-menu"
+                    role="menu"
+                    className="absolute top-full right-0 mt-4 w-80 bg-zinc-900/95 backdrop-blur-xl border border-white/10 shadow-2xl py-2 max-h-[80vh] overflow-y-auto"
                   >
-                    {allServices.map((s) => (
-                      <Link
-                        key={s.route}
-                        href={s.route}
-                        onClick={() => setServicesOpen(false)}
-                        className="flex items-center px-5 py-3 text-sm text-white/70 hover:text-white hover:bg-primary/10 transition-colors"
-                      >
-                        <span>{s.title}</span>
-                      </Link>
-                    ))}
+                    {categoryOrder.map((catId, catIdx) => {
+                      const cat = categories[catId];
+                      const items = getServicesByCategory(catId);
+                      return (
+                        <div key={catId} className={catIdx > 0 ? 'mt-2 pt-2 border-t border-white/10' : ''}>
+                          <div className="px-5 py-2 text-[10px] font-bold tracking-widest uppercase text-primary/80">
+                            {cat.label}
+                          </div>
+                          {items.map((s) => (
+                            <Link
+                              key={s.route}
+                              href={s.route}
+                              onClick={() => setServicesOpen(false)}
+                              className="flex items-center px-5 py-2.5 text-sm text-white/70 hover:text-white hover:bg-primary/10 transition-colors"
+                            >
+                              <span>{s.title}</span>
+                            </Link>
+                          ))}
+                        </div>
+                      );
+                    })}
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -160,6 +176,8 @@ export default function SiteHeader() {
               <div>
                 <button
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  aria-expanded={mobileServicesOpen}
+                  aria-controls="mobile-services-menu"
                   className="text-xl font-serif text-white/80 hover:text-primary transition-colors uppercase tracking-widest flex items-center justify-center gap-2 mx-auto"
                 >
                   Services <ChevronDown size={16} className={`transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
@@ -171,19 +189,31 @@ export default function SiteHeader() {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
+                      id="mobile-services-menu"
                       className="overflow-hidden mt-3"
                     >
-                      <div className="flex flex-col gap-3 py-3 border-t border-b border-white/10">
-                        {allServices.map((s) => (
-                          <Link
-                            key={s.route}
-                            href={s.route}
-                            onClick={() => { setMobileMenuOpen(false); setMobileServicesOpen(false); }}
-                            className="text-base text-white/60 hover:text-primary transition-colors flex items-center justify-center gap-2"
-                          >
-                            {s.title} <ChevronRight size={12} className="text-primary/40" />
-                          </Link>
-                        ))}
+                      <div className="py-3 border-t border-b border-white/10 space-y-5">
+                        {categoryOrder.map((catId) => {
+                          const cat = categories[catId];
+                          const items = getServicesByCategory(catId);
+                          return (
+                            <div key={catId} className="flex flex-col gap-3">
+                              <div className="text-[10px] font-bold tracking-widest uppercase text-primary text-center">
+                                {cat.label}
+                              </div>
+                              {items.map((s) => (
+                                <Link
+                                  key={s.route}
+                                  href={s.route}
+                                  onClick={() => { setMobileMenuOpen(false); setMobileServicesOpen(false); }}
+                                  className="text-base text-white/60 hover:text-primary transition-colors flex items-center justify-center gap-2"
+                                >
+                                  {s.title} <ChevronRight size={12} className="text-primary/40" />
+                                </Link>
+                              ))}
+                            </div>
+                          );
+                        })}
                       </div>
                     </motion.div>
                   )}

@@ -1,6 +1,6 @@
 import { Link } from 'wouter';
 import { ChevronRight, Instagram, Linkedin, Facebook, Youtube } from 'lucide-react';
-import { allServices } from '@/data/services';
+import { categories, categoryOrder, getServicesByCategory } from '@/data/services';
 
 const sectionLinks = [
   { name: 'Home', href: '/' },
@@ -15,7 +15,7 @@ export default function SiteFooter() {
   return (
     <footer className="bg-black py-20 border-t border-white/10">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-12 lg:gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
           <div className="md:col-span-1">
             <Link href="/" className="inline-block font-serif text-2xl font-bold tracking-widest text-white mb-6">
               FURY<span className="text-primary">COMBAT</span>
@@ -54,16 +54,22 @@ export default function SiteFooter() {
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-white font-bold tracking-widest uppercase text-sm mb-6">Services</h4>
-            <ul className="space-y-4">
-              {allServices.map(s => (
-                <li key={s.route}>
-                  <Link href={s.route} className="text-white/50 hover:text-primary text-sm transition-colors">{s.title}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {categoryOrder.map(catId => {
+            const cat = categories[catId];
+            const items = getServicesByCategory(catId);
+            return (
+              <div key={catId}>
+                <h4 className="text-white font-bold tracking-widest uppercase text-sm mb-6">{cat.label}</h4>
+                <ul className="space-y-4">
+                  {items.map(s => (
+                    <li key={s.route}>
+                      <Link href={s.route} className="text-white/50 hover:text-primary text-sm transition-colors">{s.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
 
           <div>
             <h4 className="text-white font-bold tracking-widest uppercase text-sm mb-6">Contact Info</h4>
