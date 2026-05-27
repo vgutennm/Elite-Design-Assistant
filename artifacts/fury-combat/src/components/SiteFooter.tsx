@@ -15,7 +15,7 @@ export default function SiteFooter() {
   return (
     <footer className="bg-black py-20 border-t border-white/10">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-x-16 gap-y-12 lg:gap-x-12 mb-16">
           <div className="md:col-span-1">
             <Link href="/" className="inline-block font-serif text-2xl font-bold tracking-widest text-white mb-6">
               FURY<span className="text-primary">COMBAT</span>
