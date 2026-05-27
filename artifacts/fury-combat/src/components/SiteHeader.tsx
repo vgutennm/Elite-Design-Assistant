@@ -99,10 +99,9 @@ export default function SiteHeader() {
                         key={s.route}
                         href={s.route}
                         onClick={() => setServicesOpen(false)}
-                        className="flex items-center justify-between px-5 py-3 text-sm text-white/70 hover:text-white hover:bg-primary/10 transition-colors"
+                        className="flex items-center px-5 py-3 text-sm text-white/70 hover:text-white hover:bg-primary/10 transition-colors"
                       >
                         <span>{s.title}</span>
-                        <span className="text-primary/60 font-mono text-xs">{s.price.split('/')[0].trim()}</span>
                       </Link>
                     ))}
                   </motion.div>

@@ -310,8 +310,7 @@ export default function Home() {
               >
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 
-                <h3 className="text-xl font-serif font-bold text-white mb-2 pr-12">{service.title}</h3>
-                <div className="text-primary font-mono text-sm font-bold mb-6">{service.price}</div>
+                <h3 className="text-xl font-serif font-bold text-white mb-6 pr-12">{service.title}</h3>
                 <p className="text-white/60 text-sm leading-relaxed mb-8 flex-grow">
                   {service.desc}
                 </p>

@@ -125,10 +125,6 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
               </Link>
             </motion.div>
 
-            <motion.div variants={fadeInUp} className="mb-4 inline-block px-3 py-1 border border-primary/30 bg-primary/10 text-primary text-xs font-semibold tracking-[0.2em] uppercase">
-              {service.price}
-            </motion.div>
-
             <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl lg:text-7xl font-black font-serif uppercase leading-[0.9] mb-6 tracking-tighter text-white">
               {service.title}
             </motion.h1>
@@ -341,8 +337,7 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
                       href={rel.route}
                       className="block p-6 bg-zinc-900/50 border border-white/10 hover:border-primary/50 transition-colors group"
                     >
-                      <h3 className="text-lg font-serif font-bold text-white group-hover:text-primary transition-colors mb-2">{rel.title}</h3>
-                      <div className="text-primary font-mono text-sm font-bold mb-3">{rel.price}</div>
+                      <h3 className="text-lg font-serif font-bold text-white group-hover:text-primary transition-colors mb-3">{rel.title}</h3>
                       <p className="text-white/50 text-sm line-clamp-2 mb-4">{rel.subheadline}</p>
                       <span className="text-primary text-xs uppercase tracking-widest font-semibold flex items-center gap-1">
                         Learn More <ChevronRight size={12} />
