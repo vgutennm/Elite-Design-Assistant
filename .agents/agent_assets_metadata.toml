@@ -6,3 +6,9 @@ id = "iDpYO6koqnrlu2prqqT7O"
 uri = "file://fury-combat-ai-export.zip"
 type = "unspecified"
 title = "Fury Combat Systems - AI Analysis Package"
+
+[[outputs]]
+id = "x10Dt-dRM5XdK_GQi0mCC"
+uri = "file://fury-combat-source-for-ai.md"
+type = "text"
+title = "Fury Combat — Source for AI Editing"
