@@ -20,7 +20,7 @@ export default function SiteFooter() {
             <Link href="/" className="inline-block font-serif text-2xl font-bold tracking-widest text-white mb-6">
               FURY<span className="text-primary">COMBAT</span>
             </Link>
-            <p className="text-white/50 text-sm max-w-sm leading-relaxed mb-8">
+            <p className="text-white/50 text-sm leading-relaxed mb-8">
               Private lessons and private workshops by inquiry only. Elite private martial arts and tactical training based in Brooklyn, NY.
             </p>
             <div className="flex gap-4">
