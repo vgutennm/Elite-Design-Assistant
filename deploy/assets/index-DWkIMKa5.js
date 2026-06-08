@@ -185,32 +185,35 @@ Error generating stack: `+s.message+`
       min-height: 50px;
       padding: 0 24px;
       border-radius: 999px;
-      border: 2px solid #d7b56d;
-      background: #d7b56d;
-      color: #0c0c0c;
+      border: 2px solid #dc2626;
+      background: #dc2626;
+      color: #ffffff;
       font-family: 'Inter', sans-serif;
       font-size: 15px;
       font-weight: 900;
       letter-spacing: 0.5px;
       text-transform: uppercase;
       text-decoration: none;
-      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
     }
 
     .david_reviews_button:hover {
       transform: translateY(-2px);
-      background: #ffffff;
-      color: #0c0c0c;
+      background: #b91c1c;
+      border-color: #b91c1c;
+      color: #ffffff;
     }
 
     .david_reviews_button.secondary {
-      background: transparent;
+      border-color: #ea580c;
+      background: #ea580c;
       color: #ffffff;
     }
 
     .david_reviews_button.secondary:hover {
-      background: #ffffff;
-      color: #0c0c0c;
+      background: #c2410c;
+      border-color: #c2410c;
+      color: #ffffff;
     }
 
     @keyframes david_reviews_scroll {
