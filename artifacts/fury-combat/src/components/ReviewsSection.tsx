@@ -343,7 +343,7 @@ export default function ReviewsSection() {
           </a>
 
           <a className="david_reviews_button secondary" href="tel:9173402911">
-            Call To Train
+            Book A Free Class
           </a>
         </div>
       </div>
