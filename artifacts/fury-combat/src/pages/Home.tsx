@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { serviceRoutes, categories, categoryOrder, type ServiceCategory } from '@/data/services';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
+import ReviewsSection from '@/components/ReviewsSection';
 import logoUfc from '@assets/trusted/ufc.png';
 import logoMarines from '@assets/trusted/marines.jpg';
 import logoArmy from '@assets/trusted/army.jpg';
@@ -723,6 +724,9 @@ export default function Home() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* REVIEWS */}
+      <ReviewsSection />
 
       {/* CONTACT */}
       <section id="contact" className="py-32 bg-zinc-950 border-t border-white/5 relative">
