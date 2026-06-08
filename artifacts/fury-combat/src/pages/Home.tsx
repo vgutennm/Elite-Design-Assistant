@@ -375,7 +375,7 @@ export default function Home() {
       <ReviewsSection />
 
       {/* VET US */}
-      <section className="py-28 bg-zinc-950 border-t border-white/5">
+      <section className="pt-28 pb-14 bg-zinc-950 border-t border-white/5">
         <div className="container mx-auto px-6 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -432,7 +432,7 @@ export default function Home() {
       </section>
 
       {/* INTRO */}
-      <section className="py-24 bg-background relative overflow-hidden">
+      <section className="pt-12 pb-24 bg-background relative overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
