@@ -371,6 +371,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* REVIEWS */}
+      <ReviewsSection />
+
+      {/* VET US */}
+      <section className="py-28 bg-zinc-950 border-t border-white/5">
+        <div className="container mx-auto px-6 max-w-5xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <h2 className="text-3xl md:text-5xl font-serif font-bold uppercase tracking-wide text-white mb-5">
+              Want to Vet Us Before You Reach Out?
+            </h2>
+            <p className="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed">
+              That makes sense. Review our Google business profile, see how we present
+              ourselves publicly, and read what others have said before booking a session.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mt-12 border border-white/10 bg-white/[0.03] p-8 md:p-10 flex flex-col md:flex-row items-center gap-8"
+          >
+            <div className="shrink-0 w-16 h-16 rounded-full bg-white flex items-center justify-center">
+              <svg viewBox="0 0 48 48" className="w-9 h-9" aria-hidden="true">
+                <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
+                <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
+                <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34A21.99 21.99 0 0 0 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"/>
+                <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/>
+              </svg>
+            </div>
+            <p className="text-white/60 text-base md:text-lg leading-relaxed text-center md:text-left flex-1">
+              Before booking a session or filling out a form, you are welcome to review our
+              Google business profile, see how we present ourselves publicly, and read what
+              others have said. We believe trust should come before pressure.
+            </p>
+            <a
+              href="https://www.google.com/search?kgmid=/g/119w2108z&q=Fury+Combat+Systems#lrd=0x89c24447140bc727:0x5cdccd1edaeaf78e,3,,,,"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold uppercase tracking-widest text-sm px-7 py-4 transition-colors"
+            >
+              <svg viewBox="0 0 48 48" className="w-5 h-5" aria-hidden="true">
+                <path fill="#fff" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z" opacity=".9"/>
+                <path fill="#fff" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z" opacity=".7"/>
+                <path fill="#fff" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34A21.99 21.99 0 0 0 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z" opacity=".5"/>
+                <path fill="#fff" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z" opacity=".8"/>
+              </svg>
+              View Our Google Business Page
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
       {/* INTRO */}
       <section className="py-24 bg-background relative overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
@@ -728,66 +788,6 @@ export default function Home() {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* REVIEWS */}
-      <ReviewsSection />
-
-      {/* VET US */}
-      <section className="py-28 bg-zinc-950 border-t border-white/5">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <h2 className="text-3xl md:text-5xl font-serif font-bold uppercase tracking-wide text-white mb-5">
-              Want to Vet Us Before You Reach Out?
-            </h2>
-            <p className="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed">
-              That makes sense. Review our Google business profile, see how we present
-              ourselves publicly, and read what others have said before booking a session.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="mt-12 border border-white/10 bg-white/[0.03] p-8 md:p-10 flex flex-col md:flex-row items-center gap-8"
-          >
-            <div className="shrink-0 w-16 h-16 rounded-full bg-white flex items-center justify-center">
-              <svg viewBox="0 0 48 48" className="w-9 h-9" aria-hidden="true">
-                <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
-                <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
-                <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34A21.99 21.99 0 0 0 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"/>
-                <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/>
-              </svg>
-            </div>
-            <p className="text-white/60 text-base md:text-lg leading-relaxed text-center md:text-left flex-1">
-              Before booking a session or filling out a form, you are welcome to review our
-              Google business profile, see how we present ourselves publicly, and read what
-              others have said. We believe trust should come before pressure.
-            </p>
-            <a
-              href="https://www.google.com/search?kgmid=/g/119w2108z&q=Fury+Combat+Systems#lrd=0x89c24447140bc727:0x5cdccd1edaeaf78e,3,,,,"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold uppercase tracking-widest text-sm px-7 py-4 transition-colors"
-            >
-              <svg viewBox="0 0 48 48" className="w-5 h-5" aria-hidden="true">
-                <path fill="#fff" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z" opacity=".9"/>
-                <path fill="#fff" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z" opacity=".7"/>
-                <path fill="#fff" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34A21.99 21.99 0 0 0 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z" opacity=".5"/>
-                <path fill="#fff" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z" opacity=".8"/>
-              </svg>
-              View Our Google Business Page
-            </a>
-          </motion.div>
-        </div>
-      </section>
 
       {/* CONTACT */}
       <section id="contact" className="py-32 bg-zinc-950 border-t border-white/5 relative">
