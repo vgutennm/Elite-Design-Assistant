@@ -15,11 +15,11 @@ import logoNavy from '@assets/trusted/navy.png';
 import logoAirForce from '@assets/trusted/air_force.png';
 
 const trustedLogos = [
-  { src: logoUfc, alt: 'UFC' },
-  { src: logoMarines, alt: 'United States Marine Corps' },
-  { src: logoArmy, alt: 'United States Army' },
-  { src: logoNavy, alt: 'United States Navy' },
-  { src: logoAirForce, alt: 'United States Air Force' },
+  { src: logoUfc, alt: 'UFC', href: 'https://www.ufc.com' },
+  { src: logoMarines, alt: 'United States Marine Corps', href: 'https://www.marines.com' },
+  { src: logoArmy, alt: 'United States Army', href: 'https://www.army.mil' },
+  { src: logoNavy, alt: 'United States Navy', href: 'https://www.navy.com' },
+  { src: logoAirForce, alt: 'United States Air Force', href: 'https://www.airforce.com' },
 ];
 
 const assetModules = import.meta.glob<string>('@assets/furycombat-website-photos-*', { eager: true, query: '?url', import: 'default' });
@@ -351,9 +351,13 @@ export default function Home() {
             className="flex flex-wrap items-center justify-center gap-4 md:gap-6 max-w-5xl mx-auto"
           >
             {trustedLogos.map((logo) => (
-              <div
+              <a
                 key={logo.alt}
-                className="flex items-center justify-center bg-white border border-white/10 p-6 w-[140px] h-[120px] md:w-[200px] md:h-[150px]"
+                href={logo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit the official ${logo.alt} website`}
+                className="flex items-center justify-center bg-white border border-white/10 p-6 w-[140px] h-[120px] md:w-[200px] md:h-[150px] transition-transform duration-300 hover:scale-[1.03]"
               >
                 <img
                   src={logo.src}
@@ -361,7 +365,7 @@ export default function Home() {
                   loading="lazy"
                   className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
                 />
-              </div>
+              </a>
             ))}
           </motion.div>
         </div>
