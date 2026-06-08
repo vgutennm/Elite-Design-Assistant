@@ -432,7 +432,7 @@ export default function Home() {
       </section>
 
       {/* INTRO */}
-      <section className="pt-12 pb-24 bg-background relative overflow-hidden">
+      <section className="pt-12 pb-12 bg-background relative overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -448,7 +448,7 @@ export default function Home() {
       </section>
 
       {/* PRIVATE INSTRUCTION */}
-      <section id="instruction" className="py-32 bg-background relative">
+      <section id="instruction" className="pt-12 pb-32 bg-background relative">
         <div className="absolute left-0 top-1/4 w-64 h-64 bg-primary/5 blur-[150px] pointer-events-none rounded-full"></div>
         
         <div className="container mx-auto px-6 relative z-10">
