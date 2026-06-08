@@ -409,7 +409,7 @@ export default function Home() {
               </svg>
             </div>
             <p className="text-white/60 text-base md:text-lg leading-relaxed text-center md:text-left flex-1">
-              Before booking a session or filling out a form, you are welcome to review our
+              Before booking a session, you are welcome to review our
               Google business profile, see how we present ourselves publicly, and read what
               others have said. We believe trust should come before pressure.
             </p>
