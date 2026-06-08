@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { Link } from 'wouter';
 import { ChevronRight, Instagram, Linkedin, Facebook, Youtube } from 'lucide-react';
 import { categories, categoryOrder, getServicesByCategory } from '@/data/services';
@@ -13,6 +14,18 @@ const sectionLinks = [
 ];
 
 export default function SiteFooter() {
+  const sealRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const container = sealRef.current;
+    if (!container || container.querySelector('script')) return;
+    const script = document.createElement('script');
+    script.async = true;
+    script.type = 'text/javascript';
+    script.src = 'https://seal.starfieldtech.com/getSealBasic?sealID=ZKjNr7iwuIgL5yP4IZMS7KMl2W7c20KqsHM6eUvodx5xgrFFJWNxUY5BMHKG';
+    container.appendChild(script);
+  }, []);
+
   return (
     <footer className="bg-black py-20 border-t border-white/10">
       <div className="container mx-auto px-6">
@@ -38,6 +51,7 @@ export default function SiteFooter() {
                 <Youtube size={18} />
               </a>
             </div>
+            <span id="siteseal" ref={sealRef} className="mt-8 block" />
           </div>
 
           <div>
