@@ -1,0 +1,1 @@
+- [fury-combat typecheck noise](fury-combat-quirks.md) — pre-existing framer-motion `ease: string` TS2322 errors; not caused by your edits, ignore unless asked to fix the build.

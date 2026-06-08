@@ -3,9 +3,6 @@ import { Link } from 'wouter';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, Phone, Mail, MapPin, ChevronLeft, Star, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { serviceRoutes, categories, categoryOrder, type ServiceCategory } from '@/data/services';
 import SiteHeader from '@/components/SiteHeader';
@@ -740,43 +737,18 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-black border border-white/10 p-8 md:p-10"
             >
-              <h3 className="text-2xl font-serif font-bold text-white mb-8">Send an Inquiry</h3>
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-xs uppercase tracking-widest text-white/50">Name</label>
-                    <Input className="bg-zinc-900 border-white/10 rounded-none focus-visible:ring-primary h-12" placeholder="Your Name" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-xs uppercase tracking-widest text-white/50">Phone</label>
-                    <Input type="tel" className="bg-zinc-900 border-white/10 rounded-none focus-visible:ring-primary h-12" placeholder="Your Phone Number" />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest text-white/50">Email</label>
-                  <Input type="email" className="bg-zinc-900 border-white/10 rounded-none focus-visible:ring-primary h-12" placeholder="Your Email Address" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest text-white/50">Interested In</label>
-                  <Select>
-                    <SelectTrigger className="bg-zinc-900 border-white/10 rounded-none focus-visible:ring-primary h-12">
-                      <SelectValue placeholder="Select a program" />
-                    </SelectTrigger>
-                    <SelectContent className="bg-zinc-900 border-white/10 rounded-none text-white">
-                      {services.map((s, i) => (
-                        <SelectItem key={i} value={s.title} className="hover:bg-primary/20 cursor-pointer">{s.title}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest text-white/50">Message</label>
-                  <Textarea className="bg-zinc-900 border-white/10 rounded-none focus-visible:ring-primary min-h-[120px] resize-none" placeholder="Tell us about your background and goals..." />
-                </div>
-                <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white rounded-none h-14 tracking-widest font-bold uppercase mt-4">
-                  Submit Inquiry
+              <h3 className="text-2xl font-serif font-bold text-white mb-4">Inquire by Phone or Email</h3>
+              <p className="text-white/60 font-light mb-8">
+                Private instruction is arranged directly with David. Reach out by phone or email to discuss your goals and schedule a session.
+              </p>
+              <div className="space-y-4">
+                <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white rounded-none h-14 tracking-widest font-bold uppercase">
+                  <a href="tel:9173402911"><Phone size={18} className="mr-2" />Call (917) 340-2911</a>
                 </Button>
-              </form>
+                <Button asChild variant="outline" className="w-full border-white/20 text-white hover:bg-white/5 rounded-none h-14 tracking-widest font-bold uppercase">
+                  <a href="mailto:david.furie@gmail.com"><Mail size={18} className="mr-2" />Email David</a>
+                </Button>
+              </div>
               
               <div className="mt-8 pt-8 border-t border-white/10 text-center flex flex-col items-center gap-3">
                 <div className="flex gap-1 text-yellow-500">
