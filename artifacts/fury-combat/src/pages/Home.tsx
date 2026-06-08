@@ -348,7 +348,7 @@ export default function Home() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="flex flex-wrap items-center justify-center gap-4 md:gap-6 max-w-5xl mx-auto"
+            className="flex flex-nowrap items-stretch justify-center gap-2 sm:gap-4 md:gap-6 max-w-5xl mx-auto"
           >
             {trustedLogos.map((logo) => (
               <a
@@ -357,7 +357,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Visit the official ${logo.alt} website`}
-                className="flex items-center justify-center bg-white border border-white/10 p-6 w-[140px] h-[120px] md:w-[200px] md:h-[150px] transition-transform duration-300 hover:scale-[1.03]"
+                className="flex flex-1 min-w-0 items-center justify-center bg-white border border-white/10 p-2 sm:p-4 md:p-6 aspect-[4/3] max-w-[200px] transition-transform duration-300 hover:scale-[1.03]"
               >
                 <img
                   src={logo.src}
