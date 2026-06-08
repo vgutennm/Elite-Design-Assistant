@@ -12,3 +12,9 @@ id = "x10Dt-dRM5XdK_GQi0mCC"
 uri = "file://fury-combat-source-for-ai.md"
 type = "text"
 title = "Fury Combat — Updated Source for AI Editing"
+
+[[outputs]]
+id = "5YGN2upD7P6qKwKxgp4Xx"
+uri = "file://fury-combat-cpanel.tar.gz"
+type = "unspecified"
+title = "Fury Combat - ready-to-upload site (cPanel)"
