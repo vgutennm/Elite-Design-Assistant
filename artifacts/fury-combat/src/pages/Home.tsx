@@ -7,6 +7,19 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { serviceRoutes, categories, categoryOrder, type ServiceCategory } from '@/data/services';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
+import logoUfc from '@assets/trusted/ufc.png';
+import logoMarines from '@assets/trusted/marines.jpg';
+import logoArmy from '@assets/trusted/army.jpg';
+import logoNavy from '@assets/trusted/navy.png';
+import logoAirForce from '@assets/trusted/air_force.png';
+
+const trustedLogos = [
+  { src: logoUfc, alt: 'UFC' },
+  { src: logoMarines, alt: 'United States Marine Corps' },
+  { src: logoArmy, alt: 'United States Army' },
+  { src: logoNavy, alt: 'United States Navy' },
+  { src: logoAirForce, alt: 'United States Air Force' },
+];
 
 const assetModules = import.meta.glob<string>('@assets/furycombat-website-photos-*', { eager: true, query: '?url', import: 'default' });
 
@@ -317,6 +330,41 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* TRUSTED BY */}
+      <section className="py-20 bg-zinc-950 border-b border-white/5 relative">
+        <div className="container mx-auto px-6">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center font-serif text-3xl md:text-4xl font-bold uppercase tracking-widest text-white mb-12"
+          >
+            Trusted By
+          </motion.h2>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-wrap items-center justify-center gap-4 md:gap-6 max-w-5xl mx-auto"
+          >
+            {trustedLogos.map((logo) => (
+              <div
+                key={logo.alt}
+                className="flex items-center justify-center bg-white border border-white/10 p-6 w-[140px] h-[120px] md:w-[200px] md:h-[150px]"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
 
       {/* INTRO */}
       <section className="py-24 bg-background relative overflow-hidden">

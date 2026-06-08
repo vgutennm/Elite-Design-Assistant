@@ -1,0 +1,159 @@
+<section class="trusted_by_section" aria-labelledby="trusted_by_title">
+  <style>
+    .trusted_by_section {
+      width: 100%;
+      padding: 48px 16px 56px;
+      background: #ffffff;
+      text-align: center;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .trusted_by_title {
+      margin: 0 0 34px;
+      font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
+      font-size: clamp(24px, 3vw, 40px);
+      line-height: 1;
+      letter-spacing: 2px;
+      color: #2b2b2b;
+      text-transform: uppercase;
+    }
+
+    .trusted_by_logos {
+      max-width: 1500px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .trusted_logo_card {
+      width: clamp(190px, 18vw, 320px);
+      height: clamp(130px, 14vw, 250px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: 2px solid #d8d8d8;
+      box-sizing: border-box;
+      padding: 26px;
+    }
+
+    .trusted_logo_card.large {
+      width: clamp(220px, 22vw, 360px);
+      height: clamp(160px, 18vw, 300px);
+      z-index: 2;
+    }
+
+    .trusted_logo_card.overlap_left {
+      margin-right: -6px;
+    }
+
+    .trusted_logo_card.overlap_right {
+      margin-left: -6px;
+    }
+
+    .trusted_logo_card img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+      filter: grayscale(100%);
+    }
+
+    .trusted_logo_card.ufc img {
+      max-width: 78%;
+    }
+
+    .trusted_logo_card.army img {
+      max-width: 82%;
+    }
+
+    .trusted_logo_card.navy img {
+      max-width: 92%;
+    }
+
+    .trusted_logo_card.air_force img {
+      max-width: 82%;
+    }
+
+    @media (max-width: 900px) {
+      .trusted_by_section {
+        padding: 40px 14px;
+      }
+
+      .trusted_by_logos {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        gap: 14px;
+      }
+
+      .trusted_logo_card,
+      .trusted_logo_card.large {
+        width: 100%;
+        height: 150px;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .trusted_by_logos {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+      }
+
+      .trusted_logo_card,
+      .trusted_logo_card.large {
+        height: 145px;
+        padding: 24px;
+      }
+    }
+  </style>
+
+  <h2 class="trusted_by_title" id="trusted_by_title">Trusted By</h2>
+
+  <div class="trusted_by_logos">
+
+    <div class="trusted_logo_card ufc overlap_left">
+      <img
+        src="/assets/trusted/ufc-logo.png"
+        alt="UFC logo"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="trusted_logo_card marines">
+      <img
+        src="/assets/trusted/us-marine-corps-emblem.png"
+        alt="United States Marine Corps emblem"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="trusted_logo_card large army">
+      <img
+        src="/assets/trusted/us-army-logo.png"
+        alt="United States Army logo"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="trusted_logo_card large navy">
+      <img
+        src="/assets/trusted/us-navy-logo.png"
+        alt="United States Navy logo"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="trusted_logo_card air_force overlap_right">
+      <img
+        src="https://www.trademark.af.mil/portals/73/Seperated%20Symbol.jpg"
+        alt="United States Air Force symbol"
+        loading="lazy"
+      />
+    </div>
+
+  </div>
+</section>
