@@ -102,9 +102,12 @@ export default function SiteFooter() {
           <p className="text-white/30 text-xs">
             &copy; {new Date().getFullYear()} Fury Combat Systems. All rights reserved.
           </p>
-          <p className="text-white/30 text-xs">
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-white/30 text-xs">
             <a href="https://furycombat.com" className="hover:text-white transition-colors">furycombat.com</a>
-          </p>
+            <p>
+              Website by <a href="https://setupshoponline.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">SetUpShopOnline.com</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
