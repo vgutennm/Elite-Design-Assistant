@@ -82,7 +82,7 @@ export default function ReviewsSection() {
 
     .david_reviews_kicker {
       margin: 0 0 10px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 13px;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -92,9 +92,10 @@ export default function ReviewsSection() {
 
     .david_reviews_title {
       margin: 0;
-      font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
-      font-size: clamp(34px, 6vw, 70px);
-      line-height: 0.95;
+      font-family: 'Cinzel', serif;
+      font-weight: 900;
+      font-size: clamp(32px, 5.5vw, 64px);
+      line-height: 1.05;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #ffffff;
@@ -103,7 +104,7 @@ export default function ReviewsSection() {
     .david_reviews_subtitle {
       max-width: 780px;
       margin: 18px auto 28px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(16px, 2vw, 20px);
       line-height: 1.55;
       color: #d9d9d9;
@@ -120,7 +121,7 @@ export default function ReviewsSection() {
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.07);
       box-shadow: 0 14px 35px rgba(0, 0, 0, 0.24);
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Inter', sans-serif;
     }
 
     .david_reviews_stars {
@@ -167,7 +168,7 @@ export default function ReviewsSection() {
       box-shadow: 0 20px 48px rgba(0, 0, 0, 0.34);
       text-align: left;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Inter', sans-serif;
     }
 
     .david_review_header {
@@ -237,7 +238,7 @@ export default function ReviewsSection() {
       border: 2px solid #d7b56d;
       background: #d7b56d;
       color: #0c0c0c;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 15px;
       font-weight: 900;
       letter-spacing: 0.5px;
