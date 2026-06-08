@@ -726,7 +726,7 @@ export default function Home() {
                   <a href="https://www.google.com/maps/search/?api=1&query=Fury+Combat+Systems+24+Cobeck+Ct+Brooklyn+NY+11223" target="_blank" rel="noreferrer">Get Directions</a>
                 </Button>
                 <Button asChild className="bg-primary hover:bg-primary/90 text-white rounded-none tracking-widest text-xs uppercase h-12 px-6">
-                  <a href="https://search.google.com/local/writereview?placeid=ChIJK3bJOxJGwokRWkZSVj7DV5s" target="_blank" rel="noreferrer">Leave a Google Review</a>
+                  <a href="https://www.google.com/search?kgmid=/g/119w2108z&q=Fury+Combat+Systems#lrd=0x89c24447140bc727:0x5cdccd1edaeaf78e,3,,,," target="_blank" rel="noreferrer">Leave a Google Review</a>
                 </Button>
               </div>
             </motion.div>

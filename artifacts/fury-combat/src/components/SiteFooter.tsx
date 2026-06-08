@@ -89,7 +89,7 @@ export default function SiteFooter() {
                 </a>
               </li>
               <li className="pt-2">
-                <a href="https://search.google.com/local/writereview?placeid=ChIJK3bJOxJGwokRWkZSVj7DV5s" target="_blank" rel="noreferrer" className="text-primary hover:text-white text-sm font-semibold transition-colors flex items-center gap-1">
+                <a href="https://www.google.com/search?kgmid=/g/119w2108z&q=Fury+Combat+Systems#lrd=0x89c24447140bc727:0x5cdccd1edaeaf78e,3,,,," target="_blank" rel="noreferrer" className="text-primary hover:text-white text-sm font-semibold transition-colors flex items-center gap-1">
                   Leave a Google Review <ChevronRight size={14} />
                 </a>
               </li>
