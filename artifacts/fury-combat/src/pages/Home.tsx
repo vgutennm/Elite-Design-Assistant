@@ -414,7 +414,7 @@ export default function Home() {
               others have said. We believe trust should come before pressure.
             </p>
             <a
-              href="https://www.google.com/search?kgmid=/g/119w2108z&q=Fury+Combat+Systems#lrd=0x89c24447140bc727:0x5cdccd1edaeaf78e,3,,,,"
+              href="https://www.google.com/search?kgmid=/g/119w2108z&q=Fury+Combat+Systems"
               target="_blank"
               rel="noopener noreferrer"
               className="shrink-0 inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold uppercase tracking-widest text-sm px-7 py-4 transition-colors"
