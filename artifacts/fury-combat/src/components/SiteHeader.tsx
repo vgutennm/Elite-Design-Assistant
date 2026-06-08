@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { categories, categoryOrder, getServicesByCategory } from '@/data/services';
+import furyLogo from '@assets/Furiesymbolmfb-1832x2048_1780944816540.png';
 
 const mainNavLinks = [
   { name: 'Home', href: '/', isHash: false },
@@ -60,8 +61,8 @@ export default function SiteHeader() {
     <>
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 group">
-            <span className="font-serif text-2xl font-bold tracking-widest text-white group-hover:text-primary transition-colors">FURY<span className="text-primary group-hover:text-white transition-colors">COMBAT</span></span>
+          <Link href="/" className="flex items-center group">
+            <img src={furyLogo} alt="Fury Combat Systems" className={`w-auto transition-all duration-300 ${isScrolled ? 'h-12' : 'h-14'}`} />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8 ml-8">

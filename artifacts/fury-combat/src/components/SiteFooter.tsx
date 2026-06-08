@@ -1,6 +1,7 @@
 import { Link } from 'wouter';
 import { ChevronRight, Instagram, Linkedin, Facebook, Youtube } from 'lucide-react';
 import { categories, categoryOrder, getServicesByCategory } from '@/data/services';
+import furyLogo from '@assets/Furiesymbolmfb-1832x2048_1780944816540.png';
 
 const sectionLinks = [
   { name: 'Home', href: '/' },
@@ -17,8 +18,8 @@ export default function SiteFooter() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-x-16 gap-y-12 lg:gap-x-20 mb-16">
           <div className="md:col-span-1">
-            <Link href="/" className="inline-block font-serif text-2xl font-bold tracking-widest text-white mb-6">
-              FURY<span className="text-primary">COMBAT</span>
+            <Link href="/" className="inline-block mb-6">
+              <img src={furyLogo} alt="Fury Combat Systems" className="h-28 w-auto" />
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-8">
               Private lessons and private workshops by inquiry only. Elite private martial arts and tactical training based in Brooklyn, NY.
