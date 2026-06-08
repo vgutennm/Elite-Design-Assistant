@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    # IMPORTANT: replace "epwvsoimz5wz" below with your real cPanel username
+    # if it differs. cPanel shows it in the Repository Path it pre-fills
+    # (e.g. /home/<your-username>/...).
+    - export DEPLOYPATH=/home/epwvsoimz5wz/public_html
+    - /bin/cp -R deploy/. $DEPLOYPATH/
