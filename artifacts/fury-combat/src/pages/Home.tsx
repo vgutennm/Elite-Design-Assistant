@@ -194,11 +194,15 @@ const services: HomeService[] = [
 const faqs = [
   {
     q: "What is Fury Combat Systems?",
-    a: "Fury Combat Systems is a Brooklyn-based private martial arts and tactical training brand built around the Fury System developed by Grandmaster Dr. David Furie."
+    a: "Fury Combat Systems is a Brooklyn-based private martial arts and tactical training brand built around the Fury System developed by Soke David Fury (Grandmaster Dr. David Furie)."
+  },
+  {
+    q: "Who is Soke David Fury?",
+    a: "Soke David Fury, also known as Grandmaster Dr. David Furie, is the founder (Soke) of the Fury System. He is a 10th degree black belt / dan, retired Secret Service Operative, former Special Forces member, world champion fighter, and International Combat Martial Arts Master based in Brooklyn, NY."
   },
   {
     q: "Who is David Furie?",
-    a: "David Furie is a 10th degree black belt / dan, retired Secret Service Operative, former Special Forces member, world champion fighter, and International Combat Martial Arts Master."
+    a: "David Furie, known professionally as Soke David Fury, is a 10th degree black belt / dan, retired Secret Service Operative, former Special Forces member, world champion fighter, and International Combat Martial Arts Master."
   },
   {
     q: "What kind of training does Fury Combat offer?",
@@ -213,8 +217,8 @@ const faqs = [
     a: "Fury Combat Systems is based in Brooklyn, New York, at 24 Cobek Ct, Brooklyn, NY 11223."
   },
   {
-    q: "How do I contact David Furie?",
-    a: "You can contact David directly by phone at (917) 340-2911 or by email at david.furie@gmail.com."
+    q: "How do I contact Soke David Fury?",
+    a: "You can contact Soke David Fury (Dr. David Furie) directly by phone at (917) 340-2911 or by email at david.furie@gmail.com."
   },
   {
     q: "Who is private instruction for?",
@@ -303,7 +307,7 @@ export default function Home() {
               Fury Combat <br/><span className="text-transparent border-text" style={{ WebkitTextStroke: '2px hsl(var(--primary))'}}>Systems</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl font-light">
-              Train privately with Grandmaster Dr. David Furie in personal readiness, tactical awareness, practical self-protection, and high-level instruction designed for real-world application.
+              Train privately with Soke David Fury (Grandmaster Dr. David Furie) in personal readiness, tactical awareness, practical self-protection, and high-level instruction designed for real-world application.
             </motion.p>
             <motion.p variants={fadeInUp} className="text-base text-white/60 mb-10 max-w-2xl">
               Fury Combat offers private instruction for individuals seeking more than a standard martial arts class. Each session is designed around the client's goals, lifestyle, and level of experience, with a focus on practical skill, confidence, awareness, conditioning, and readiness under pressure.
@@ -330,7 +334,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x divide-white/5">
             <div className="px-4">
               <div className="text-primary font-serif font-bold text-xl md:text-2xl mb-1">10th Dan</div>
-              <div className="text-xs text-white/50 uppercase tracking-widest">Grandmaster</div>
+              <div className="text-xs text-white/50 uppercase tracking-widest">Soke / Grandmaster</div>
             </div>
             <div className="px-4">
               <div className="text-primary font-serif font-bold text-xl md:text-2xl mb-1">Operative</div>
@@ -457,7 +461,7 @@ export default function Home() {
             className="max-w-4xl mx-auto text-center"
           >
             <p className="text-xl md:text-3xl font-serif leading-tight text-white/90">
-              Fury Combat Systems is a Brooklyn-based private training brand led by Grandmaster Dr. David Furie. The Fury System blends practical hand-to-hand instruction, tactical awareness, strategic thinking, and personal readiness for clients who want real-world capability, not generic training.
+              Fury Combat Systems is a Brooklyn-based private training brand led by Soke David Fury (Grandmaster Dr. David Furie). The Fury System blends practical hand-to-hand instruction, tactical awareness, strategic thinking, and personal readiness for clients who want real-world capability, not generic training.
             </p>
           </motion.div>
         </div>
@@ -622,7 +626,7 @@ export default function Home() {
             <div className="text-primary font-bold tracking-widest uppercase text-xs mb-3">Watch</div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold uppercase mb-4 text-white">Unleash Your Inner Warrior</h2>
             <p className="text-base text-white/60 font-light leading-relaxed">
-              A glimpse inside the Fury Combat training environment with Grandmaster Dr. David Furie.
+              A glimpse inside the Fury Combat training environment with Soke David Fury (Grandmaster Dr. David Furie).
             </p>
           </motion.div>
           <motion.div
@@ -658,12 +662,12 @@ export default function Home() {
             >
               <div className="sticky top-32">
                 <div className="relative overflow-hidden mb-6 aspect-[3/4]">
-                  <Img src={imgLegend1} alt="Grandmaster Dr. David Furie" className="w-full h-full object-cover" />
+                  <Img src={imgLegend1} alt="Soke David Fury - Grandmaster Dr. David Furie" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 shadow-[inset_0_0_100px_rgba(0,0,0,0.8)] pointer-events-none" />
                 </div>
                 <div className="flex gap-4">
-                  <Img src={imgLegend2} alt="David Furie Action" className="w-1/2 aspect-square object-cover grayscale opacity-70 hover:opacity-100 transition-opacity" />
-                  <Img src={imgLegend4} alt="David Furie Seminar" className="w-1/2 aspect-square object-cover grayscale opacity-70 hover:opacity-100 transition-opacity" />
+                  <Img src={imgLegend2} alt="Soke David Fury in action" className="w-1/2 aspect-square object-cover grayscale opacity-70 hover:opacity-100 transition-opacity" />
+                  <Img src={imgLegend4} alt="Soke David Fury seminar" className="w-1/2 aspect-square object-cover grayscale opacity-70 hover:opacity-100 transition-opacity" />
                 </div>
               </div>
             </motion.div>
@@ -678,13 +682,16 @@ export default function Home() {
               <motion.div variants={fadeInUp} className="mb-4 inline-block text-primary text-sm font-bold tracking-[0.3em] uppercase">
                 The Legend
               </motion.div>
-              <motion.h2 variants={fadeInUp} className="text-5xl md:text-7xl font-serif font-black uppercase mb-10 text-white leading-none">
-                David Furie
+              <motion.h2 variants={fadeInUp} className="text-5xl md:text-7xl font-serif font-black uppercase mb-3 text-white leading-none">
+                Soke David Fury
               </motion.h2>
+              <motion.p variants={fadeInUp} className="mb-10 text-white/50 text-sm uppercase tracking-[0.2em]">
+                Grandmaster Dr. David Furie
+              </motion.p>
               
               <div className="space-y-8 text-lg md:text-xl text-white/70 font-light leading-relaxed">
                 <motion.p variants={fadeInUp} className="text-white/90 font-medium">
-                  Grandmaster Dr. David Furie is a 10th degree black belt / dan, a retired Secret Service Operative, a former member of the military's elite Special Forces unit, a world champion fighter, and an International Combat Martial Arts Master.
+                  Soke David Fury, known as Grandmaster Dr. David Furie, is a 10th degree black belt / dan, a retired Secret Service Operative, a former member of the military's elite Special Forces unit, a world champion fighter, and an International Combat Martial Arts Master.
                 </motion.p>
                 <motion.p variants={fadeInUp}>
                   He developed the Fury System to reflect the evolution of combat for the modern world, training that sharpens not only physical capability, but also mental toughness, emotional control, and readiness under pressure.
@@ -693,7 +700,7 @@ export default function Home() {
                   For those seeking direct access to high-level instruction shaped by decades of experience, Fury Combat offers a rare private training environment grounded in real-world application.
                 </motion.p>
                 <motion.p variants={fadeInUp}>
-                  Across seminars, public appearances, martial arts events, and private instruction, David has built a presence that reflects discipline, recognition, and lifelong commitment to the path of combat arts and personal readiness.
+                  Across seminars, public appearances, martial arts events, and private instruction, Soke David Fury has built a presence that reflects discipline, recognition, and lifelong commitment to the path of combat arts and personal readiness.
                 </motion.p>
               </div>
 
@@ -712,7 +719,7 @@ export default function Home() {
           <div className="max-w-3xl mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold uppercase mb-6 text-white">Gallery</h2>
             <p className="text-xl text-white/60 font-light">
-              A closer look at Fury Combat Systems, Grandmaster David Furie, public appearances, training moments, events, and the visual identity behind the Fury System.
+              A closer look at Fury Combat Systems, Soke David Fury (Grandmaster David Furie), public appearances, training moments, events, and the visual identity behind the Fury System.
             </p>
           </div>
 
