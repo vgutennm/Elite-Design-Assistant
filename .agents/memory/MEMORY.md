@@ -1,1 +1,2 @@
 - [fury-combat typecheck noise](fury-combat-quirks.md) — pre-existing framer-motion `ease: string` TS2322 errors; not caused by your edits, ignore unless asked to fix the build.
+- [fury-combat duplicated service data](fury-combat-quirks.md) — service list lives in BOTH `data/services.ts` and `pages/Home.tsx`; category/title/visibility changes must be made in both.

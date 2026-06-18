@@ -17,3 +17,16 @@ framer-motion `Easing` literal/array.
 these `ease: string` errors before assuming your change broke the build. Only the
 absence of *new* error categories matters. Fix the `ease` typing itself only if
 asked to clean up the build.
+
+# fury-combat: service data is duplicated in two places
+
+The service list exists twice: `src/data/services.ts` (`allServices`, drives the
+nav dropdown, footer, and service detail pages) AND `src/pages/Home.tsx` (a local
+`services` array, drives only the homepage services grid).
+
+**Why:** the homepage keeps its own trimmed copy (title/desc/isWorkshop/category)
+instead of importing `allServices`. A change made in one file silently won't show
+in the other surface.
+
+**How to apply:** any change to a service's category, title, or whether it appears
+at all must be made in BOTH files or the homepage and nav/footer will disagree.

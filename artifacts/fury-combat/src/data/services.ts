@@ -27,7 +27,7 @@ export const categories: Record<ServiceCategory, CategoryMeta> = {
     label: 'Martial Arts & Combat Sports',
     shortLabel: 'Martial Arts & Combat Sports',
     tagline: 'Competitive Martial Arts & Sport Combat Training',
-    description: 'Private competitive martial arts instruction in Brooklyn for adults and young athletes who want the sport side of the system, including MMA, Jujitsu, Kickboxing, Ninjutsu, Self Defense, and Weapons and Tactics.',
+    description: 'Private competitive martial arts instruction in Brooklyn for adults and young athletes who want the sport side of the system, including MMA, Jujitsu, Kickboxing, Ninjutsu, and Self Defense.',
   },
 };
 
