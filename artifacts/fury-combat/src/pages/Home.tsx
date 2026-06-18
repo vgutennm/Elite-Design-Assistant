@@ -142,7 +142,7 @@ const services: HomeService[] = [
     title: "Self Defense",
     desc: "Private self defense training in Brooklyn built around awareness, prevention, hand-to-hand defense, confidence, and decisive real-world response.",
     isWorkshop: false,
-    category: 'sport',
+    category: 'elite',
   },
   {
     title: "Jujitsu",

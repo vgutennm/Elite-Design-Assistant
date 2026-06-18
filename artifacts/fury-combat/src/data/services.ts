@@ -27,7 +27,7 @@ export const categories: Record<ServiceCategory, CategoryMeta> = {
     label: 'Martial Arts & Combat Sports',
     shortLabel: 'Martial Arts & Combat Sports',
     tagline: 'Competitive Martial Arts & Sport Combat Training',
-    description: 'Private competitive martial arts instruction in Brooklyn for adults and young athletes who want the sport side of the system, including MMA, Jujitsu, Kickboxing, Ninjutsu, and Self Defense.',
+    description: 'Private competitive martial arts instruction in Brooklyn for adults and young athletes who want the sport side of the system, including MMA, Jujitsu, Kickboxing, and Ninjutsu.',
   },
 };
 
@@ -462,7 +462,7 @@ export const allServices: ServiceData[] = [
   {
     title: "Self Defense",
     route: "/self-defense-in-brooklyn",
-    category: 'sport',
+    category: 'elite',
     metaTitle: "Self Defense in Brooklyn | Fury Combat Systems",
     metaDescription: "Private self defense training in Brooklyn with Grandmaster Dr. David Furie. Learn awareness, prevention, hand-to-hand defense, confidence, and real-world response.",
     subheadline: "Private self defense training in Brooklyn built around awareness, prevention, and decisive real-world response.",
