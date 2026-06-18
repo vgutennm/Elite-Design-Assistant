@@ -762,7 +762,7 @@ export const allServices: ServiceData[] = [
     title: "Weapons and Tactics",
     route: "/weapons-and-tactics-in-brooklyn",
     price: "",
-    category: 'sport',
+    category: 'elite',
     metaTitle: "Weapons and Tactics in Brooklyn | Fury Combat Systems",
     metaDescription: "Private weapons and tactics training in Brooklyn with Grandmaster Dr. David Furie. Learn awareness, tactical movement, weapons familiarity, discipline, and practical readiness.",
     subheadline: "Private weapons and tactics training in Brooklyn focused on awareness, control, and disciplined response.",

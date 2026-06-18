@@ -587,7 +587,7 @@ SERVICES = [
         "title": "Weapons and Tactics",
         "route": "/weapons-and-tactics-in-brooklyn",
         "price": "",
-        "category": "sport",
+        "category": "elite",
         "subheadline": "Private weapons and tactics training in Brooklyn focused on awareness, control, and disciplined response.",
         "overview": "Weapons and Tactics training at Fury Combat Systems introduces clients to practical awareness, tactical movement, weapons familiarity, and disciplined response. The focus is controlled, responsible instruction designed to build readiness, coordination, confidence, and a deeper understanding of real-world defensive situations.",
         "whoFor": [

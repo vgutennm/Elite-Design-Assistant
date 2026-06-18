@@ -187,7 +187,7 @@ const services: HomeService[] = [
     price: "",
     desc: "Private weapons and tactics training in Brooklyn focused on awareness, tactical movement, weapons familiarity, discipline, and practical readiness.",
     isWorkshop: false,
-    category: 'sport',
+    category: 'elite',
   }
 ];
 
