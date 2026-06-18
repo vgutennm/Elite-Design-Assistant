@@ -698,9 +698,6 @@ for cat in order:
         add_run(title_p, f"{svc_num}. {svc['title']}", 14, bold=True, color=DARK)
 
         meta_p = doc.add_paragraph(); sp(meta_p, 0, 2)
-        price = svc["price"] if svc["price"] else "Custom pricing (by inquiry)"
-        add_run(meta_p, f"Price: ", 10, bold=True, color=RED)
-        add_run(meta_p, f"{price}      ", 10)
         add_run(meta_p, f"Page: ", 10, bold=True, color=RED)
         add_run(meta_p, svc["route"], 10)
 

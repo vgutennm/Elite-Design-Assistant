@@ -36,7 +36,6 @@ export const categoryOrder: ServiceCategory[] = ['elite', 'sport'];
 export interface ServiceData {
   title: string;
   route: string;
-  price: string;
   category: ServiceCategory;
   metaTitle: string;
   metaDescription: string;
@@ -74,7 +73,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Private Instruction",
     route: "/private-instruction",
-    price: "$250 / session",
     category: 'elite',
     metaTitle: "Private Instruction | Fury Combat Systems",
     metaDescription: "Private instruction with Grandmaster Dr. David Furie in Brooklyn. One-on-one training tailored to your goals, experience, and real-world readiness.",
@@ -126,7 +124,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Advanced Tactical Instruction",
     route: "/advanced-tactical-instruction",
-    price: "$500 / session",
     category: 'elite',
     metaTitle: "Advanced Tactical Instruction | Fury Combat Systems",
     metaDescription: "Advanced Tactical Instruction with David Furie for serious clients seeking higher-level readiness, awareness, and strategic response training.",
@@ -176,7 +173,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Women's Private Safety Training",
     route: "/womens-private-safety-training",
-    price: "$300 / session",
     category: 'elite',
     metaTitle: "Women's Private Safety Training | Fury Combat Systems",
     metaDescription: "Private safety training for women in Brooklyn focused on awareness, confidence, prevention, de-escalation, escape options, and real-world response.",
@@ -226,7 +222,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Tactical Conditioning",
     route: "/tactical-conditioning",
-    price: "$150 / session",
     category: 'elite',
     metaTitle: "Tactical Conditioning | Fury Combat Systems",
     metaDescription: "Tactical Conditioning with David Furie combines conditioning, reaction, coordination, and practical defensive drills in a private training format.",
@@ -275,7 +270,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Young Adult Readiness Training",
     route: "/young-adult-readiness-training",
-    price: "$225 / session",
     category: 'elite',
     metaTitle: "Young Adult Readiness Training | Fury Combat Systems",
     metaDescription: "Young Adult Readiness Training with David Furie for commuting, college, travel, city life, confidence, and practical real-world readiness.",
@@ -324,7 +318,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Executive Readiness",
     route: "/executive-readiness",
-    price: "$400 / session",
     category: 'elite',
     metaTitle: "Executive Readiness | Fury Combat Systems",
     metaDescription: "Executive Readiness with David Furie is premium private training for executives, entrepreneurs, and professionals who value preparedness, discretion, and self-command.",
@@ -373,7 +366,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Family Protection Session",
     route: "/family-protection-session",
-    price: "$350 / session",
     category: 'elite',
     metaTitle: "Family Protection Session | Fury Combat Systems",
     metaDescription: "Family Protection Sessions with David Furie focused on awareness, protective habits, emergency thinking, and everyday readiness for individuals and families.",
@@ -422,7 +414,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Private Workshops",
     route: "/private-workshops",
-    price: "Starting at $1,500",
     category: 'elite',
     metaTitle: "Private Workshops | Fury Combat Systems",
     metaDescription: "Private workshops with David Furie for companies, leadership teams, women's groups, and select audiences seeking practical awareness, de-escalation, readiness, and protection principles.",
@@ -471,7 +462,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Self Defense",
     route: "/self-defense-in-brooklyn",
-    price: "",
     category: 'sport',
     metaTitle: "Self Defense in Brooklyn | Fury Combat Systems",
     metaDescription: "Private self defense training in Brooklyn with Grandmaster Dr. David Furie. Learn awareness, prevention, hand-to-hand defense, confidence, and real-world response.",
@@ -529,7 +519,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Jujitsu",
     route: "/jujitsu-in-brooklyn",
-    price: "",
     category: 'sport',
     metaTitle: "Jujitsu in Brooklyn | Private Jujitsu Training",
     metaDescription: "Private Jujitsu training in Brooklyn with Grandmaster Dr. David Furie. Learn leverage, control, close-combat skill, grappling concepts, and practical self-defense.",
@@ -587,7 +576,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Ninjutsu",
     route: "/ninjutsu-in-brooklyn",
-    price: "",
     category: 'sport',
     metaTitle: "Ninjutsu in Brooklyn | Private Ninjutsu Training",
     metaDescription: "Private Ninjutsu training in Brooklyn with Grandmaster Dr. David Furie. Learn adaptability, movement, awareness, weapons concepts, and real-world combat strategy.",
@@ -645,7 +633,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Kickboxing",
     route: "/kickboxing-in-brooklyn",
-    price: "",
     category: 'sport',
     metaTitle: "Kickboxing in Brooklyn | Private Kickboxing Training",
     metaDescription: "Private kickboxing training in Brooklyn with Grandmaster Dr. David Furie. Build striking skill, footwork, conditioning, balance, reflexes, and self-defense readiness.",
@@ -703,7 +690,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Mixed Martial Arts",
     route: "/mixed-martial-arts-in-brooklyn",
-    price: "",
     category: 'sport',
     metaTitle: "Mixed Martial Arts in Brooklyn | Private MMA Training",
     metaDescription: "Private mixed martial arts training in Brooklyn with Grandmaster Dr. David Furie. Learn striking, grappling, clinch work, ground awareness, and complete fighting skill.",
@@ -761,7 +747,6 @@ export const allServices: ServiceData[] = [
   {
     title: "Weapons and Tactics",
     route: "/weapons-and-tactics-in-brooklyn",
-    price: "",
     category: 'elite',
     metaTitle: "Weapons and Tactics in Brooklyn | Fury Combat Systems",
     metaDescription: "Private weapons and tactics training in Brooklyn with Grandmaster Dr. David Furie. Learn awareness, tactical movement, weapons familiarity, discipline, and practical readiness.",

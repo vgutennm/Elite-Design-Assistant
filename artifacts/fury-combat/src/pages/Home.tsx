@@ -84,7 +84,6 @@ const imgDeco1 = asset('furycombat-website-photos-002.jpg');
 
 type HomeService = {
   title: string;
-  price: string;
   desc: string;
   isWorkshop: boolean;
   category: ServiceCategory;
@@ -93,98 +92,84 @@ type HomeService = {
 const services: HomeService[] = [
   {
     title: "Private Instruction",
-    price: "$250/session",
     desc: "One-on-one training tailored to your goals, experience, and preferred areas of focus. Sessions may include movement, striking, grappling, defensive positioning, situational awareness, tactical response, pressure-point application, and controlled performance under stress.",
     isWorkshop: false,
     category: 'elite',
   },
   {
     title: "Advanced Tactical Instruction",
-    price: "$500/session",
     desc: "A more elevated private offering for serious individuals seeking instruction in readiness, tactical thinking, awareness under pressure, protective movement, weapons familiarity, reconnaissance concepts, and strategic response.",
     isWorkshop: false,
     category: 'elite',
   },
   {
     title: "Women's Private Safety Training",
-    price: "$300/session",
     desc: "Private instruction designed to help women strengthen awareness, confidence, prevention skills, de-escalation ability, escape options, and decisive real-world response.",
     isWorkshop: false,
     category: 'elite',
   },
   {
     title: "Tactical Conditioning",
-    price: "$150/session",
     desc: "A private training experience that combines conditioning, coordination, movement, reaction, and practical defensive drills.",
     isWorkshop: false,
     category: 'elite',
   },
   {
     title: "Young Adult Readiness Training",
-    price: "$225/session",
     desc: "Private instruction for young adults preparing for college, commuting, travel, city life, or greater independence.",
     isWorkshop: false,
     category: 'elite',
   },
   {
     title: "Executive Readiness",
-    price: "$400/session",
     desc: "A premium private training offering for executives, entrepreneurs, professionals, and public-facing individuals who value preparedness, discretion, awareness, and self-command.",
     isWorkshop: false,
     category: 'elite',
   },
   {
     title: "Family Protection Session",
-    price: "$350/session",
     desc: "A private session for individuals or families focused on practical awareness, protective habits, emergency thinking, and everyday readiness.",
     isWorkshop: false,
     category: 'elite',
   },
   {
     title: "Private Workshops",
-    price: "Starting at $1,500",
     desc: "Private workshops for companies, organizations, leadership teams, women's groups, and select audiences seeking a refined, practical training experience in awareness, de-escalation, readiness, and personal protection principles.",
     isWorkshop: true,
     category: 'elite',
   },
   {
     title: "Self Defense",
-    price: "",
     desc: "Private self defense training in Brooklyn built around awareness, prevention, hand-to-hand defense, confidence, and decisive real-world response.",
     isWorkshop: false,
     category: 'sport',
   },
   {
     title: "Jujitsu",
-    price: "",
     desc: "Private Jujitsu training in Brooklyn focused on leverage, control, balance disruption, grappling concepts, and practical close-combat skill.",
     isWorkshop: false,
     category: 'sport',
   },
   {
     title: "Ninjutsu",
-    price: "",
     desc: "Private Ninjutsu training in Brooklyn built around adaptability, awareness, movement, weapons concepts, and real-world combat strategy.",
     isWorkshop: false,
     category: 'sport',
   },
   {
     title: "Kickboxing",
-    price: "",
     desc: "Private kickboxing training in Brooklyn for striking skill, footwork, conditioning, balance, reflexes, and self-defense readiness.",
     isWorkshop: false,
     category: 'sport',
   },
   {
     title: "Mixed Martial Arts",
-    price: "",
     desc: "Private MMA training in Brooklyn combining striking, grappling, clinch fighting, ground awareness, and full-spectrum combat readiness.",
     isWorkshop: false,
     category: 'sport',
   },
   {
     title: "Weapons and Tactics",
-    price: "",
     desc: "Private weapons and tactics training in Brooklyn focused on awareness, tactical movement, weapons familiarity, discipline, and practical readiness.",
     isWorkshop: false,
     category: 'elite',
