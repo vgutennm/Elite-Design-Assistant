@@ -133,18 +133,6 @@ const services: HomeService[] = [
     category: 'elite',
   },
   {
-    title: "Private Workshops",
-    desc: "Private workshops for companies, organizations, leadership teams, women's groups, and select audiences seeking a refined, practical training experience in awareness, de-escalation, readiness, and personal protection principles.",
-    isWorkshop: true,
-    category: 'elite',
-  },
-  {
-    title: "Self Defense",
-    desc: "Private self defense training in Brooklyn built around awareness, prevention, hand-to-hand defense, confidence, and decisive real-world response.",
-    isWorkshop: false,
-    category: 'elite',
-  },
-  {
     title: "Jujitsu",
     desc: "Private Jujitsu training in Brooklyn focused on leverage, control, balance disruption, grappling concepts, and practical close-combat skill.",
     isWorkshop: false,
@@ -172,6 +160,18 @@ const services: HomeService[] = [
     title: "Weapons and Tactics",
     desc: "Private weapons and tactics training in Brooklyn focused on awareness, tactical movement, weapons familiarity, discipline, and practical readiness.",
     isWorkshop: false,
+    category: 'elite',
+  },
+  {
+    title: "Self Defense",
+    desc: "Private self defense training in Brooklyn built around awareness, prevention, hand-to-hand defense, confidence, and decisive real-world response.",
+    isWorkshop: false,
+    category: 'elite',
+  },
+  {
+    title: "Private Workshops",
+    desc: "Private workshops for companies, organizations, leadership teams, women's groups, and select audiences seeking a refined, practical training experience in awareness, de-escalation, readiness, and personal protection principles.",
+    isWorkshop: true,
     category: 'elite',
   }
 ];
