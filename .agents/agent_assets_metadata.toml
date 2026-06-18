@@ -18,3 +18,9 @@ id = "5YGN2upD7P6qKwKxgp4Xx"
 uri = "file://fury-combat-cpanel.tar.gz"
 type = "unspecified"
 title = "Fury Combat - ready-to-upload site (cPanel)"
+
+[[outputs]]
+id = "pBv2MehPPXwCT31dGZmZI"
+uri = "file://Fury-Combat-Systems-Services.docx"
+type = "word_document"
+title = "Fury Combat Systems — Services (One Page)"
