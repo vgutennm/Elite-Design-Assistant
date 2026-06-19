@@ -49,3 +49,32 @@ Requiring it at config-load time turns a build-time env gap into a hard failure.
 to `"/"`. Symptom to recognize: "published but prod still shows old content on
 every device incl. private mode" + a `dist/public` whose mtime predates the
 edits → check the production build command actually succeeds with NO env set.
+
+# Verify prod content by md5/byte-comparing the live bundle, not screenshots
+
+When a user insists prod shows stale content, do NOT trust dev preview or
+screenshots. Fetch the live JS bundle and compare it to the local fresh build:
+`curl -s https://<app>.replit.app/ | grep -oE 'assets/index-[A-Za-z0-9_-]+\.js'`
+then curl that bundle and `md5sum` it against `dist/public/assets/index-*.js`.
+Identical md5 = prod IS serving your exact build. To read array order out of a
+minified bundle, grep byte offsets of fields that appear EXACTLY ONCE per item
+(e.g. `metaTitle`), NOT `route`/slug strings — slugs are duplicated by
+`relatedSlugs` cross-references and give a false order.
+
+**Why:** the fury-combat "prod is stale" report was false — the live bundle was
+byte-identical to the correct local build; the user had simply checked before the
+deploy finished and/or hit a browser-cached page.
+
+# Replit static autoscale serves index.html with cache-control: private + expires
+
+Static autoscale deploys (GAE-backed) serve `index.html` with
+`cache-control: private` and an `expires` at END OF DAY (GMT), no `no-cache`. So a
+returning visitor who loaded the page earlier the same day keeps the OLD
+`index.html` (and thus the old hashed bundle) until midnight GMT even on normal
+reloads. New/private-mode visitors get fresh. Use a query-string cache-buster
+(`?fresh=1`) to force-refresh and to prove current content to the user.
+
+**Why:** explains "I republished but still see old" for returning visitors;
+distinct from the vite-build-failure cause above. Check `last-modified` on the
+live `index.html` — if it postdates the edits, prod is current and the issue is
+client/edge cache, not the build.
